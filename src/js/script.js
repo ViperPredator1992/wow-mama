@@ -15,16 +15,14 @@ $(document).ready(function () {
         items: 1
     });
     
-    //if (screen.width < 1020) {
-        $('.burger').click(function () {
-            if ($(this).next('.menu-list').css('display') == 'none') {
-                $(this).next('.menu-list').slideDown();
-                $('.burger').addClass('burger-open');
-            } else {
-                $('.burger').removeClass('burger-open');
-                $(this).next('.menu-list').slideUp();
-            }
-        });
-    //}
+    $('.burger').click(function () {
+        if ($(this).next('.menu-list').css('display') == 'none') {
+            $(this).next('.menu-list').slideDown();
+            $('.burger').addClass('burger-open');
+        } else {
+            $('.burger').removeClass('burger-open');
+            $(this).next('.menu-list').slideUp();
+        }
+    });
 
 });

@@ -8,7 +8,7 @@
             position: absolute
             top: 0
             left: 0
-            z-index: 5
+            z-index: 8
             width: 240px
             background-color: $main-bg
             padding: 25px 0 30px
@@ -36,13 +36,18 @@
         &__personal
             color: $white
             font-size: 14px
-            display: inline-block 
+            display: inline-block
+            border-bottom: 1px dotted $white 
+            position: relative
             &::before
-                content: url(../img/header/businessman.png)
+                content: ''
+                background: url(../img/header/businessman.png) no-repeat
                 width: 14px
                 height: 17px
-                margin-right: 14px
                 vertical-align: middle
+                position: absolute
+                top: 0
+                left: -26px
     &-bottom
         background-color: $white
         position: relative
