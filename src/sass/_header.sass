@@ -15,3 +15,34 @@
             & img
                 margin: auto
                 display: block
+        &__marker
+            color: $contacts
+            width: 13px
+            margin-right: 14px
+        &__address
+            font-size: 14px
+            color: $white
+        &__phone
+            color: $white
+            font-size: 14px
+            &::before
+                content: url(../img/header/old-handphone.png)
+                width: 15px
+                height: 15px
+                margin-right: 14px
+        &__personal
+            color: $white
+            font-size: 14px 
+            &::before
+                content: url(../img/header/businessman.png)
+                width: 14px
+                height: 17px
+                margin-right: 14px        
+.right-side
+    max-width: 840px
+    width: 100%
+    position: absolute
+    right: 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between            

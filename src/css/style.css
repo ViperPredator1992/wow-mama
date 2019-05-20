@@ -414,4 +414,54 @@ a {
   margin: auto;
   display: block;
 }
+
+.header-top__marker {
+  color: #8f8a85;
+  width: 13px;
+  margin-right: 14px;
+}
+
+.header-top__address {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.header-top__phone {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.header-top__phone::before {
+  content: url(../img/header/old-handphone.png);
+  width: 15px;
+  height: 15px;
+  margin-right: 14px;
+}
+
+.header-top__personal {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.header-top__personal::before {
+  content: url(../img/header/businessman.png);
+  width: 14px;
+  height: 17px;
+  margin-right: 14px;
+}
+
+.right-side {
+  max-width: 840px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */
