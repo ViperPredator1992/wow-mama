@@ -366,4 +366,52 @@ template {
           box-sizing: border-box;
   outline: none;
 }
+
+body {
+  font-family: 'Raleway';
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  background-color: #4d4843;
+  min-height: 55px;
+}
+
+.header-top .container {
+  position: relative;
+}
+
+.header-top__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  background-color: #f1efea;
+  height: 240px;
+  padding: 25px 0 30px;
+}
+
+.header-top__logo img {
+  margin: auto;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
