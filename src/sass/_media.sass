@@ -16,27 +16,52 @@
         &-top
             min-height: 80px
             &__logo
-                padding: 15px 0
-                width: 220px
+                padding: 15px 10px
+                width: 120px
+                left: 50%
+                transform: translateX(-50%)
+                & img
+                    width: 80px
             &__address,
             &__phone,
             &__personal
-                margin: 5px 0 
+                margin: 8px 0
+            &__marker
+                margin-right: 5px    
+            &__address
+                position: absolute
+                top: 5px
+                left: 0
+            &__personal
+                position: absolute
+                top: 5px
+                right: 0
+            &__phone
+                position: absolute
+                bottom: 5px
+                left: 0
+                &::before
+                    margin-right: 8px
+            &__socials
+                position: absolute
+                right: 0
+                bottom: 8px                 
         &-bottom
             & .container
                 max-width: 1100px
             &__link
                 position: absolute
-                top: 20px
-                right: 10px              
+                top: 10px
+                right: 10px
+                height: 40px              
     .right-side
-        max-width: 500px
+        max-width: none
     .menu
         &-list
-            min-height: 100px
+            min-height: 60px
             &__item
                 position: relative
-                top: 100px
+                top: 60px
                 z-index: 10
                 background-color: $white 
                 margin-right: 0 
@@ -47,9 +72,4 @@
                 padding: 15px 10px
                 font-size: 16px      
     .hero
-        top: 100px
-
-    .header-top__logo
-        display: none
-        left: 50%
-        transform: translateX(-50%)                                               
+        top: 60px                                             
