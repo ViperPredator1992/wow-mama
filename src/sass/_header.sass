@@ -45,15 +45,7 @@
                 vertical-align: middle
     &-bottom
         background-color: $white
-        min-height: 130px            
-.socials
-    &__link
-        display: inline-block
-        &:nth-child(2)
-            margin: 0 14px
-        & img
-            width: 24px
-            height: 25px                            
+        min-height: 130px                                        
 .right-side
     max-width: 840px
     width: 100%
@@ -70,4 +62,27 @@
         list-style-type: none
         display: flex     
         &__item
+            margin-right: 35px
+            &:last-child
+                margin-right: 0
+        &__link 
+            text-transform: uppercase
+            display: block
+            color: $menu-link 
+            font-size: 13px
+            transition: .2s
+            padding-bottom: 15px 
+            position: relative
             
+            &:hover
+                color: $menu-hover
+                &::before
+                    content: ''
+                    height: 3px
+                    width: 31px
+                    background-color: $line
+                    position: absolute
+                    bottom: -3px
+                    left: 50%
+                    transform: translateX(-50%)
+                 
