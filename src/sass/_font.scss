@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Raleway';
+    font-display: swap;
+    src: url('../fonts/Raleway-Bold.eot');
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+        url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-display: swap;
+    src: url('../fonts/Raleway-Regular.eot');
+    src: local('Raleway Regular'), local('Raleway-Regular'),
+        url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
