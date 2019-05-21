@@ -1351,6 +1351,24 @@ a {
   }
   .main-salon-block-left__title {
     text-align: center;
+    margin: 0 0 15px;
+  }
+  .main-salon-block-left__text {
+    padding-left: 10px;
+    margin: 0 0 20px;
+  }
+  .main-salon-block-left__text::before {
+    top: 5px;
+  }
+  .main-salon-block-left__link {
+    font-size: 14px;
+    margin: 0 auto 20px;
+  }
+  .section {
+    padding: 35px 0;
+  }
+  .section-title {
+    font-size: 36px;
   }
 }
 
@@ -1397,6 +1415,12 @@ a {
   }
   .owl-item-block__subtitle {
     letter-spacing: .1rem;
+  }
+  .main-salon-block-left__text {
+    padding-left: 0;
+  }
+  .main-salon-block-left__text::before {
+    left: -10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
