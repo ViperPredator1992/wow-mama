@@ -1,0 +1,32 @@
+.online
+    position: relative
+    &::after
+        content: ''
+        background: url(../img/online.jpg) no-repeat
+        max-width: 960px
+        width: 100%
+        min-height: 717px
+        position: absolute
+        top: 0
+        right: 0
+    &__title
+        margin: 0 0 59px 
+    &-block
+        position: relative
+        padding-left: 67px
+        z-index: 15
+        background-color: $main-bg
+        &::before
+            content: ''
+            width: 3px
+            height: 31px
+            background-color: $line
+            position: absolute
+            top: 4px
+            left: 0
+        &__subtitle
+            font-weight: normal
+            font-size: 18px       
+            color: $menu-link
+            margin: 0
+            line-height: 24px
