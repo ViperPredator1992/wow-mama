@@ -17,6 +17,10 @@
     .right-side,
     .navbar
         max-width: 720px
+@media (max-width: 1215px)
+    .main-gallery
+        & .container
+            max-width: 906px        
 @media (max-width: 1186px)
     .main-stoce
         &-block
@@ -44,6 +48,7 @@
     .header-bottom
         & .container
             max-width: 1000px
+
 @media (max-width: 1020px) 
     .header
         &-top
@@ -139,6 +144,20 @@
                     padding-left: 20px
                 &__link
                     margin: 0 auto 40px
+    .main-gallery
+        &__title
+            padding-bottom: 25px
+            margin: 0 0 35px
+        &-button
+            padding: 180px 0 50px
+            bottom: -110px 
+@media (max-width: 925px)
+    .main-gallery
+        &-block
+            &__image
+                padding: 0 8px
+        & .container
+            max-width: 602px                                     
 @media (max-width: 920px)
     .main-services 
         & .container
@@ -190,10 +209,18 @@
                     width: 60px
 @media (max-width: 630px)
     .main-services 
-        & .container
-            max-width: 300px
         &-block
-            margin: 0 0 80px                        
+            margin: 0 0 80px
+            &s
+                max-width: 270px
+                margin: auto
+@media (max-width: 620px)  
+    .main-gallery
+        &-block
+            max-width: 270px
+            margin: auto
+            &__image
+                padding: 0                                          
 @media (max-width: 600px)
     .owl-dot
         width: 10px
