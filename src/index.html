@@ -261,8 +261,20 @@
                    <h6 class="online-block__subtitle">Оставьте свои контактные данные<br> 
 и мы перезвоним Вам в ближайшее время</h6> 
                     <form class="online-form" action="#" method="post">
-                        <div class="online-form-field"></div>
-                        <div class="online-form-field"></div>
+                        <div class="online-form-field">
+                            <input type="text" class="online-form-field__input input" name="user_service" placeholder="Услуга" value="">
+                            <input type="text" class="online-form-field__input input" name="user_date" placeholder="Дата" value="">
+                            <input type="text" class="online-form-field__input input" name="user_name" placeholder="Имя" value="">
+                        </div>
+                        <div class="online-form-field">
+                            <select name="user_specialist" class="online-form-field__select">
+                                <option value="Специалист">Специалист</option>
+                                <option value="Специалист">Специалист2</option>
+                                <option value="Специалист">Специалист3</option>
+                            </select>
+                            <input type="text" class="online-form-field__input input" name="user_time" placeholder="Время" value="">
+                            <input type="tel" class="online-form-field__input input" name="user_phone" placeholder="Телефон" value="">
+                        </div>
                     </form>
                 </div>
             </div>
