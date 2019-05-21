@@ -17,6 +17,12 @@
     .right-side,
     .navbar
         max-width: 720px
+@media (max-width: 1186px)
+    .main-stoce
+        &-block
+            margin-bottom: 40px
+        &-inner
+            max-width: none            
 @media (max-width: 1170px)
     .section,
     .section-bg
@@ -197,7 +203,23 @@
             &__line
                 margin: 10px auto 5px
     .owl-dots
-        bottom: 20px                                            
+        bottom: 20px 
+    .main-stoce
+        &-top
+            margin-bottom: 40px
+            flex-direction: column
+            &__title
+                margin-bottom: 20px
+        &-block
+            flex-direction: column
+            align-items: center 
+        &-inner
+            margin-left: 0
+            margin-top: 30px
+            &__title
+                margin: 15px 0
+            &__text
+                margin: 0 0 15px                                                           
 @media (max-width: 500px)
     .header
         &-top

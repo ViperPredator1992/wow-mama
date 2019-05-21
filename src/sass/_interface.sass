@@ -81,10 +81,24 @@ a
     font-family: 'Times New Roman', sans-serif
     color: #414141                  
 .section-stoce-text
-    font-family: 'Times New Roman', sans-serif
     color: #414141 
     line-height: 24px
     font-size: 14px
+.read-more
+    font-family: 'Times New Roman', sans-serif
+    color: #414141 
+    font-size: 11px
+    text-transform: uppercase
+    position: relative
+    padding-left: 50px
+    &::before
+        content: ''
+        width: 31px
+        height: 3px
+        background-color: #ffb00f
+        position: absolute
+        top: 4px
+        left: 0
 
 @media (max-width: 1020px)
     .burger

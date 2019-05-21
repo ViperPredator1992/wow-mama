@@ -490,10 +490,28 @@ a {
 }
 
 .section-stoce-text {
-  font-family: 'Times New Roman', sans-serif;
   color: #414141;
   line-height: 24px;
   font-size: 14px;
+}
+
+.read-more {
+  font-family: 'Times New Roman', sans-serif;
+  color: #414141;
+  font-size: 11px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 50px;
+}
+
+.read-more::before {
+  content: '';
+  width: 31px;
+  height: 3px;
+  background-color: #ffb00f;
+  position: absolute;
+  top: 4px;
+  left: 0;
 }
 
 @media (max-width: 1020px) {
@@ -1275,6 +1293,23 @@ a {
   height: 50px;
 }
 
+.main-stoce-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-stoce-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .main-stoce-inner {
   max-width: 370px;
   margin-left: 30px;
@@ -1286,6 +1321,10 @@ a {
 
 .main-stoce-inner__title {
   margin: 24px 0 29px;
+}
+
+.main-stoce-inner__text {
+  margin: 0 0 45px;
 }
 
 @media (max-width: 1280px) {
@@ -1312,6 +1351,15 @@ a {
   .right-side,
   .navbar {
     max-width: 720px;
+  }
+}
+
+@media (max-width: 1186px) {
+  .main-stoce-block {
+    margin-bottom: 40px;
+  }
+  .main-stoce-inner {
+    max-width: none;
   }
 }
 
@@ -1555,6 +1603,35 @@ a {
   }
   .owl-dots {
     bottom: 20px;
+  }
+  .main-stoce-top {
+    margin-bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-stoce-top__title {
+    margin-bottom: 20px;
+  }
+  .main-stoce-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-stoce-inner {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .main-stoce-inner__title {
+    margin: 15px 0;
+  }
+  .main-stoce-inner__text {
+    margin: 0 0 15px;
   }
 }
 
