@@ -420,6 +420,24 @@ a {
   height: 25px;
 }
 
+.links {
+  font-family: 'Times New Roman', sans-serif;
+  color: #414141;
+  font-size: 12px;
+  border: 1px solid #ffb00f;
+  border-radius: 30px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (max-width: 1020px) {
   .burger {
     position: absolute;
@@ -1074,24 +1092,9 @@ a {
 }
 
 .main-salon-block-left__link {
-  font-family: 'Times New Roman', sans-serif;
-  color: #414141;
-  text-transform: uppercase;
-  border-radius: 30px;
-  font-size: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-left: 65px;
   width: 156px;
   height: 50px;
-  border: 1px solid #ffb00f;
 }
 
 .main-salon-block-right__image {
@@ -1190,6 +1193,28 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-stoce-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.main-stoce-top__title {
+  margin: 0;
+}
+
+.main-stoce-top__link {
+  width: 156px;
+  height: 50px;
 }
 
 @media (max-width: 1280px) {
@@ -1370,6 +1395,12 @@ a {
   }
 }
 
+@media (max-width: 920px) {
+  .main-services .container {
+    max-width: 610px;
+  }
+}
+
 @media (max-width: 870px) {
   .owl-item-block {
     top: 40%;
@@ -1424,6 +1455,15 @@ a {
   }
   .header-top__logo img {
     width: 60px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main-services .container {
+    max-width: 300px;
+  }
+  .main-services-block {
+    margin: 0 0 80px;
   }
 }
 
