@@ -734,11 +734,12 @@ a {
   height: 8px;
   background-color: #ffffff;
   border-radius: 50%;
+  margin: 0 12px;
 }
 
 .owl-dots {
   position: absolute;
-  bottom: 150px;
+  bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -746,6 +747,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+}
+
+.owl-dot.active {
+  background-color: #ffb00f;
 }
 
 /**
