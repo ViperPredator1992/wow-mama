@@ -391,6 +391,16 @@ a {
   text-decoration: none;
 }
 
+.section {
+  padding: 114px 0;
+}
+
+.section-title {
+  font-size: 48px;
+  color: #414141;
+  font-weight: bold;
+}
+
 .socials__link {
   display: inline-block;
 }
