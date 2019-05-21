@@ -759,11 +759,15 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 12px;
   cursor: pointer;
+  padding-bottom: 40px;
+}
+
+.item-check-block {
   color: #a7a7a7;
 }
 
@@ -774,14 +778,44 @@ input {
   height: 22px;
   border-radius: 50%;
   border: 1px solid #a7a7a7;
+  background-color: #414141;
 }
 
-.check:focus {
-  background-color: #414141;
+.check input {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.check span {
+  display: block;
+  width: 13px;
+  height: 11px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  z-index: 1;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.check input:checked + span {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  background: url(../img/check.png) no-repeat;
+  width: 12px;
+  height: 12px;
+  background-size: 100%;
 }
 
 .online-form-field__politic {
   color: #414141;
+  display: block;
 }
 
 .inner-checkbox {
