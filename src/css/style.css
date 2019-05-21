@@ -1119,6 +1119,79 @@ a {
           transform: translateX(-50%);
 }
 
+.main-services-block {
+  max-width: 270px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.main-services-block__image img {
+  width: 270px;
+  margin: auto;
+  display: block;
+}
+
+.main-services-block__button {
+  position: relative;
+}
+
+.main-services-block__link {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #414141;
+  width: 227px;
+  height: 74px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -24px;
+  z-index: 5;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.main-services-block__link:hover {
+  background-color: #ffb00f;
+  color: #ffffff;
+}
+
+.main-services-block__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 31px;
+  height: 3px;
+  background-color: #ffb00f;
+}
+
+.main-services-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media (max-width: 1280px) {
   .owl-item-block {
     top: 45%;
@@ -1147,8 +1220,24 @@ a {
 }
 
 @media (max-width: 1170px) {
-  .section {
+  .section,
+  .section-bg {
     padding: 80px 0;
+  }
+  .main-services .container {
+    max-width: 900px;
+  }
+  .main-services__title {
+    padding-bottom: 20px;
+    margin: 0 0 35px;
+  }
+  .main-services-block {
+    margin: 0 10px 80px;
+  }
+  .main-services-blocks {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1252,7 +1341,8 @@ a {
   .hero-slider .owl-nav button.owl-prev {
     left: 50px;
   }
-  .section {
+  .section,
+  .section-bg {
     padding: 50px 0;
   }
   .main-salon {
@@ -1389,7 +1479,8 @@ a {
     font-size: 14px;
     margin: 0 auto 20px;
   }
-  .section {
+  .section,
+  .section-bg {
     padding: 35px 0;
   }
   .section-title {

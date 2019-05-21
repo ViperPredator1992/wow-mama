@@ -18,8 +18,19 @@
     .navbar
         max-width: 720px
 @media (max-width: 1170px)
-    .section
-        padding: 80px 0        
+    .section,
+    .section-bg
+        padding: 80px 0
+    .main-services
+        & .container
+            max-width: 900px
+        &__title
+            padding-bottom: 20px
+            margin: 0 0 35px
+        &-block
+            margin: 0 10px 80px
+            &s
+                justify-content: flex-start                
 @media (max-width: 1120px)   
     .header-top,
     .header-bottom
@@ -101,7 +112,8 @@
         right: 50px
     .hero-slider .owl-nav button.owl-prev
         left: 50px
-    .section
+    .section,
+    .section-bg
         padding: 50px 0    
     .main-salon
         margin-top: 60px
@@ -116,7 +128,11 @@
                     max-width: none
                     padding-left: 20px
                 &__link
-                    margin: 0 auto 40px                    
+                    margin: 0 auto 40px
+@media (max-width: 920px)
+    .main-services 
+        & .container
+                                                    
 @media (max-width: 870px)
     .owl-item
         &-block
@@ -206,7 +222,8 @@
                 &__link
                     font-size: 14px
                     margin: 0 auto 20px           
-    .section
+    .section,
+    .section-bg
         padding: 35px 0
     .section-title
         font-size: 36px                                                                                   
