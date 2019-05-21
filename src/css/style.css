@@ -755,6 +755,35 @@ input {
           justify-content: center;
 }
 
+.item-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 12px;
+  cursor: pointer;
+  color: #a7a7a7;
+}
+
+.check {
+  margin-right: 18px;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #a7a7a7;
+}
+
+.check:focus {
+  background-color: #414141;
+}
+
+.online-form-field__politic {
+  color: #414141;
+}
+
 .inner-checkbox {
   font-size: 11px;
   text-transform: uppercase;
@@ -1729,6 +1758,7 @@ input {
 }
 
 .online-block {
+  max-width: 800px;
   position: relative;
   padding-left: 67px;
   z-index: 15;
@@ -1753,8 +1783,19 @@ input {
   line-height: 24px;
 }
 
-.online-form {
+.online-form-field {
   max-width: 300px;
+}
+
+.online-form-fields {
+  max-width: 650px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .online-form-field__input {
@@ -1783,9 +1824,10 @@ input {
 }
 
 .selecter {
-  margin: 0;
+  margin: 0 0 15px;
   width: 100%;
   max-width: 300px;
+  border-bottom: 1px solid #b3b0a7;
 }
 
 .selecter-selected {
@@ -1793,7 +1835,7 @@ input {
   font-size: 14px;
   background: #f1efea;
   color: #414141;
-  padding: 10px 0;
+  padding: 14px 0;
 }
 
 .selecter.open .selecter-selected,
@@ -1803,8 +1845,14 @@ input {
   background: #f1efea;
 }
 
-.selecter-item {
+.selecter-item,
+.selecter-item.selected {
   background: #f1efea;
+}
+
+.selecter-selected:after {
+  right: 0;
+  border-top: 5px solid #000000;
 }
 
 @media (max-width: 1280px) {
