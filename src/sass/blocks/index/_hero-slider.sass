@@ -1,7 +1,7 @@
 .hero
     position: relative
     top: 130px
-.owl-item
+.owl-item   
     &-block
         position: absolute
         top: 50%
@@ -29,5 +29,33 @@
             text-align: center
             display: block
             text-transform: uppercase
-            letter-spacing: 1rem
-            
+            letter-spacing: .4rem
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev
+    position: absolute
+    top: 50%
+    z-index: 10           
+.owl-carousel .owl-nav button.owl-next
+    right: 100px
+    background: url(../img/slide/arrow.png) no-repeat !important
+    width: 55px
+    height: 55px
+    font-size: 0 !important
+.owl-carousel .owl-nav button.owl-prev
+    left: 100px
+    background: url(../img/slide/arrow.png) no-repeat !important
+    width: 55px
+    height: 55px 
+    font-size: 0 !important
+    transform: rotate(180deg)       
+.owl-dot
+    width: 8px
+    height: 8px
+    background-color: $white
+    border-radius: 50%
+.owl-dots
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;        
