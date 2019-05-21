@@ -17,41 +17,43 @@
         max-width: 270px
         width: 100%
         margin-bottom: 80px
+        position: relative
         &__image
             & img
                 width: 270px
                 margin: auto
                 display: block
         &__button
-            position: relative       
-        &__link
-            font-family: 'Times New Roman', sans-serif
-            font-size: 19px
-            display: flex
-            align-items: center
-            justify-content: center
-            color: $menu-link
-            width: 227px
-            height: 74px
-            background-color: $white
             position: absolute
             left: 50%
             transform: translateX(-50%)
-            top: -24px 
-            z-index: 5
-            transition: .3s
+            bottom: -44px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 227px
+            height: 74px
+            background-color: $white
+            transition: .3s    
+        &__link
+            font-family: 'Times New Roman', sans-serif
+            font-size: 19px
+            color: $menu-link
+            display: block
             &:hover
-                background-color: $line
                 color: $white
+            &:hover .main-services-block__button
+                background-color: $line    
             &::after
                 content: ''
                 position: absolute
-                bottom: 0
+                bottom: -44px
                 left: 50%
                 transform: translateX(-50%)
                 width: 31px
                 height: 3px
                 background-color: $line
+                z-index: 5
         &s
             display: flex
             flex-wrap: wrap
