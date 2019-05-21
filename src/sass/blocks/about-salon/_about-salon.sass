@@ -1,0 +1,40 @@
+.main-salon
+    margin-top: 130px
+    &-block
+        display: flex
+        justify-content: space-between
+        &-left
+            &__title
+                margin: 0 0 65px
+            &__text
+                color: $menu-link
+                line-height: 26px
+                position: relative
+                max-width: 620px
+                padding-left: 65px
+                margin: 0 0 60px
+                &::before
+                    content: ''
+                    width: 3px
+                    height: 31px
+                    background-color: $line
+                    position: absolute
+                    top: 0
+                    left: 0
+            &__link
+                font-family: 'Times New Roman', sans-serif
+                color: $menu-link 
+                text-transform: uppercase
+                border-radius: 30px
+                font-size: 12px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-left: 65px
+                width: 156px
+                height: 50px
+                border: 1px solid $line                       
+        &-right
+            &__image
+                width: 497px
+                display: block
