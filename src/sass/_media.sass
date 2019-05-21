@@ -144,8 +144,7 @@
                 & img
                     width: 60px
 @media (max-width: 600px)
-    .owl-dot,
-    .hero-slider button.owl-dot
+    .owl-dot
         width: 10px
         height: 10px
     .hero-slider .owl-nav button.owl-next,
@@ -192,6 +191,11 @@
                 transform: translateX(0)
                 & img
                     width: auto
+    .owl-dots
+        display: none
+    .owl-item
+        &-block
+            top: 50%                        
 @media (max-width: 390px)
     .header
         &-top
@@ -199,4 +203,11 @@
             &__phone,
             &__personal,
             &__socials
-                right: 10px                                                                                                                  
+                right: 10px 
+    .owl-item
+        &-block
+            &__title
+                font-size: 20px
+                letter-spacing: .5rem
+            &__subtitle
+                letter-spacing: .1rem                                                                                                                                     
