@@ -1832,18 +1832,23 @@ input {
   position: relative;
 }
 
+.online-form::after {
+  content: '';
+  background: url(../img/form.png) no-repeat;
+  width: 49px;
+  height: 39px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .online-form::before {
   content: '';
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 38px 38px;
-  border-color: transparent transparent #333 transparent;
-  -webkit-clip-path: polygon(0% 0%, calc(100% - 38px) 0%, 100% 38px, 100% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, calc(100% - 38px) 0%, 100% 38px, 100% 100%, 0% 100%);
+  width: 38px;
+  height: 38px;
 }
 
 .online-form-field {
@@ -1937,6 +1942,49 @@ input {
 .selecter-selected:after {
   right: 0;
   border-top: 5px solid #000000;
+}
+
+.team {
+  margin-top: 180px;
+}
+
+.team__title {
+  text-align: center;
+  padding-bottom: 40px;
+  margin: 0 0 60px;
+  position: relative;
+}
+
+.team__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 31px;
+  height: 3px;
+  background-color: #ffb00f;
+}
+
+.team-item {
+  max-width: 270px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.team-item__image img {
+  display: block;
+}
+
+.team-item__master {
+  font-style: italic;
+  padding: 30px 0 25px;
+  text-align: center;
+  display: block;
+  color: #9d9d9d;
+  font-size: 15px;
 }
 
 @media (max-width: 1530px) {

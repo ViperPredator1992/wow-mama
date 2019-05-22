@@ -1,0 +1,30 @@
+.team
+    margin-top: 180px
+    &__title
+        text-align: center
+        padding-bottom: 40px
+        margin: 0 0 60px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 31px
+            height: 3px
+            background-color: $line
+    &-item
+        max-width: 270px
+        width: 100%
+        background-color: $white
+        &__image
+            & img
+                display: block
+        &__master
+            font-style: italic
+            padding: 30px 0 25px
+            text-align: center
+            display: block
+            color: $master
+            font-size: 15px                
