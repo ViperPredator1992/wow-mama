@@ -17,7 +17,6 @@
         position: relative
         padding-left: 67px
         z-index: 15
-        background-color: $main-bg
         &::before
             content: ''
             width: 3px
@@ -30,10 +29,11 @@
             font-weight: normal
             font-size: 18px       
             color: $menu-link
-            margin: 0 0 20px
+            margin: 0
             line-height: 24px
     &-form
-        position: relative
+        background-color: $main-bg
+        padding-top: 20px
         &::after
             content: ''
             background: url(../img/form.png) no-repeat
@@ -44,14 +44,11 @@
             right: 0
         &::before
             content: ''
+            width: 38px
+            height: inherit
             position: absolute
             bottom: 0
-            right: 0
-            width: 0
-            height: 0
-            border-style: solid
-            border-width: 0 0 39px 39px
-            border-color: transparent transparent transparent transparent    
+            right: 0    
         &-field
             max-width: 300px
             &s
