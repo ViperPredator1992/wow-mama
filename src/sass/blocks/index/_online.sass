@@ -6,7 +6,7 @@
         background: url(../img/online.jpg) no-repeat
         max-width: 960px
         width: 100%
-        min-height: 717px
+        min-height: 710px
         position: absolute
         top: 0
         right: 0
@@ -33,6 +33,25 @@
             margin: 0 0 20px
             line-height: 24px
     &-form
+        position: relative
+        &::after
+            content: ''
+            background: url(../img/form.png) no-repeat
+            width: 49px
+            height: 39px
+            position: absolute
+            bottom: 0
+            right: 0
+        &::before
+            content: ''
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 0 0 39px 39px
+            border-color: transparent transparent transparent transparent    
         &-field
             max-width: 300px
             &s
