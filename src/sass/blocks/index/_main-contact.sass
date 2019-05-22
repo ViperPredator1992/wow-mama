@@ -1,5 +1,7 @@
 .ymap-container 
-    position: absolute 
+    position: absolute
+    top: 0
+    left: 0 
     width: 50%
     overflow: hidden 
     cursor: pointer 
@@ -56,4 +58,14 @@
         opacity: 1
 
 .main-contact
-    position: relative        
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    & .container
+        width: 100%
+        flex-basis: 50%
+        display: flex
+        justify-content: flex-end
+    &__title
+        margin: 0           
