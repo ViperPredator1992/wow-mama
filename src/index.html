@@ -362,7 +362,7 @@
             </div>
         </section>
         <section class="section main-contact">
-            <div class="ymap-container">
+            <div class="ymap-container map" id="map">
                 <div class="loader loader-default"></div>
                 <div id="map-yandex"></div>
             </div>
@@ -387,6 +387,7 @@
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=(7175574e-517b-4eb2-a94c-953f62e69909)&lang=ru_RU"></script>
     <script>
         ymaps.ready(init);
 
@@ -395,7 +396,7 @@
                     // Центр карты, указываем коордианты
                     center: [55.9097, 37.8243],
                     // Масштаб, тут все просто
-                    zoom: 9,
+                    zoom: 17,
                     // Отключаем все элементы управления
                     controls: []
                 });
@@ -408,9 +409,9 @@
                 }, {
                         iconLayout: 'default#image',
                         // Путь до нашей картинки
-                        iconImageHref: '/img/map-logo.png',
+                        iconImageHref: '/src/img/map-logo.png',
                         // Размер по ширине и высоте
-                        iconImageSize: [70, 70],
+                        iconImageSize: [78, 79],
                         // Смещение левого верхнего угла иконки относительно
                         // её «ножки» (точки привязки).
                         iconImageOffset: [-35, -35]
@@ -424,7 +425,7 @@
                 clusterer.add(myGeoObjects);
                 myMap.geoObjects.add(clusterer);
                 // Отлючаем возможность изменения масштаба
-                myMap.behaviors.disable('scrollZoom');
+                //myMap.behaviors.disable('scrollZoom');
 
             }
     </script>
