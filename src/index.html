@@ -362,10 +362,10 @@
             </div>
         </section>
         <section class="section main-contact">
-            <!-- <div class="ymap-container">
+            <div class="ymap-container">
                 <div class="loader loader-default"></div>
                 <div id="map-yandex"></div>
-            </div> -->
+            </div>
             <div class="container">
                 <h2 class="section-title main-contact__title">Связаться с нами</h2>
                 <ul class="main-contact-list">
@@ -387,38 +387,46 @@
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script>
+    <script>
         ymaps.ready(init);
 
             function init() {
-                // Создание экземпляра карты и его привязка к контейнеру с
-                // заданным id ("map")
-                var myMap = new ymaps.Map('map', {
-                    // При инициализации карты, обязательно нужно указать
-                    // ее центр и коэффициент масштабирования
-                    center: [55.9097, 37.8243], // Нижний Новгород
-                    zoom: 17
+                var myMap = new ymaps.Map("map", {
+                    // Центр карты, указываем коордианты
+                    center: [55.9097, 37.8243],
+                    // Масштаб, тут все просто
+                    zoom: 9,
+                    // Отключаем все элементы управления
+                    controls: []
                 });
 
-                // Создание метки 
-                var myPlacemark = new ymaps.Placemark(
-                    // Координаты метки
-                    [55.6301, 37.2737], {
-                        // Свойства
-                        // Текст метки
-                        hintContent: 'Оперный театр'
-                    }, {
-                        iconImageHref: 'http://webmap-blog.ru/files/gmap/gicon/mm_20_red.png', // картинка иконки
-                        iconImageSize: [12, 20], // размеры картинки
-                        iconImageOffset: [-6, -10] // смещение картинки
+                var myGeoObjects = [];
+
+                // Наша метка, указываем коордианты
+                myGeoObjects = new ymaps.Placemark([55.6301, 37.2737], {
+                    balloonContentBody: 'Текст в балуне',
+                }, {
+                        iconLayout: 'default#image',
+                        // Путь до нашей картинки
+                        iconImageHref: '/img/map-logo.png',
+                        // Размер по ширине и высоте
+                        iconImageSize: [70, 70],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её «ножки» (точки привязки).
+                        iconImageOffset: [-35, -35]
                     });
 
+                var clusterer = new ymaps.Clusterer({
+                    clusterDisableClickZoom: false,
+                    clusterOpenBalloonOnClick: false,
+                });
 
-                // Добавление метки на карту
-                myMap.geoObjects.add(myPlacemark);
-
+                clusterer.add(myGeoObjects);
+                myMap.geoObjects.add(clusterer);
+                // Отлючаем возможность изменения масштаба
+                myMap.behaviors.disable('scrollZoom');
 
             }
-    </script> -->
+    </script>
 </body>
 </html>
