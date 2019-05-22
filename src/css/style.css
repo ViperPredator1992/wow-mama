@@ -2229,33 +2229,16 @@ input {
 
 .main-contact {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .main-contact .container {
-  width: 100%;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  max-width: 420px;
+  position: relative;
+}
+
+.main-contact-wrap {
+  position: absolute;
+  top: 0;
+  right: 80px;
 }
 
 .main-contact__title {
@@ -2302,6 +2285,17 @@ input {
   font-size: 16px;
 }
 
+.main-contact-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 65px;
+}
+
+.main-contact-social__link:nth-child(2) {
+  margin: 0 15px;
+}
+
 @media (max-width: 1800px) {
   .instagram-gallery {
     -ms-flex-wrap: wrap;
@@ -2320,6 +2314,12 @@ input {
 @media (max-width: 1530px) {
   .online::after {
     max-width: 780px;
+  }
+}
+
+@media (max-width: 1370px) {
+  .ymap-container {
+    background-position: 30% -2px;
   }
 }
 
@@ -2414,6 +2414,9 @@ input {
   }
   .online::after {
     min-height: 650px;
+  }
+  #map-yandex {
+    height: 530px;
   }
 }
 
@@ -2584,6 +2587,57 @@ input {
   .team {
     margin-top: 110px;
   }
+  #map-yandex {
+    height: 490px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ymap-container {
+    top: 460px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .main-contact-wrap {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .main-contact__title {
+    margin: 0 0 30px;
+  }
+  .ymap-container {
+    width: 100%;
+    background-position: 0;
+    background-size: cover;
+    max-width: 600px;
+  }
+  #map-yandex {
+    height: 410px;
+  }
+}
+
+@media (max-width: 940px) {
+  .main-contact__title {
+    font-size: 40px;
+  }
+  .main-contact-list__item {
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+  .main-contact-social {
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ymap-container {
+    top: 400px;
+  }
 }
 
 @media (max-width: 925px) {
@@ -2647,6 +2701,12 @@ input {
   }
   .online-form-fields {
     max-width: 620px;
+  }
+}
+
+@media (max-width: 733px) {
+  .online-form-field__politic {
+    max-width: 500px;
   }
 }
 

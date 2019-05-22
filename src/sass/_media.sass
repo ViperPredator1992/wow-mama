@@ -11,6 +11,9 @@
     .online
         &::after
             max-width: 780px
+@media (max-width: 1370px)
+    .ymap-container
+        background-position: 30% -2px            
 @media (max-width: 1280px)
     .owl-item
         &-block
@@ -21,7 +24,7 @@
         bottom: 70px
     .hero-slider .owl-nav button.owl-next, 
     .hero-slider .owl-nav button.owl-prev
-        top: 45%                    
+        top: 45%                           
 @media (max-width: 1220px)
     .header-top,
     .header-bottom
@@ -80,6 +83,8 @@
     .online
         &::after
             min-height: 650px
+    #map-yandex
+        height: 530px            
 @media (max-width: 1150px)
     .team
         &-item
@@ -206,7 +211,41 @@
     .online
         top: 110px
     .team
-        margin-top: 110px                 
+        margin-top: 110px
+    #map-yandex
+        height: 490px
+@media (max-width: 1000px)
+    .ymap-container
+        top: 460px
+        left: 50%
+        transform: translateX(-50%) 
+    .main-contact-wrap
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+    .main-contact
+        &__title
+            margin: 0 0 30px
+    .ymap-container
+        width: 100%
+        background-position: 0
+        background-size: cover
+        max-width: 600px
+    #map-yandex
+        height: 410px
+@media (max-width: 940px)  
+    .main-contact
+        &__title
+            font-size: 40px
+        &-list
+            &__item
+                padding-left: 30px
+                margin-bottom: 25px
+        &-social
+            padding-left: 0
+            justify-content: center
+    .ymap-container
+        top: 400px                                                                                  
 @media (max-width: 925px)
     .main-gallery
         &-block
@@ -255,7 +294,10 @@
             max-width: 640px
         &-form
             &-fields
-                max-width: 620px                
+                max-width: 620px 
+@media (max-width: 733px)
+    .online-form-field__politic
+        max-width: 500px                               
 @media (max-width: 700px)
     .hero-slider .owl-nav button.owl-next
         right: 20px
