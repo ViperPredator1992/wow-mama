@@ -1,3 +1,7 @@
+@media (max-width: 1530px)
+    .online
+        &::after
+            max-width: 780px
 @media (max-width: 1280px)
     .owl-item
         &-block
@@ -17,6 +21,10 @@
     .right-side,
     .navbar
         max-width: 720px
+    .online
+        &::after
+            max-width: 600px
+            background-position: 50%        
 @media (max-width: 1215px)
     .main-gallery
         & .container
@@ -26,7 +34,14 @@
         &-block
             margin-bottom: 40px
         &-inner
-            max-width: none            
+            max-width: none
+    .online
+        &::after
+            display: none
+        &-block
+            margin: auto
+        &__title
+            text-align: center                            
 @media (max-width: 1170px)
     .section,
     .section-bg
@@ -42,7 +57,10 @@
         &-block
             margin: 0 10px 80px
             &s
-                justify-content: flex-start                
+                justify-content: flex-start 
+    .online
+        &::after
+            min-height: 650px                               
 @media (max-width: 1120px)   
     .header-top,
     .header-bottom
@@ -150,7 +168,9 @@
             margin: 0 0 35px
         &-button
             padding: 180px 0 50px
-            bottom: -110px 
+            bottom: -110px
+    .online
+        top: 110px             
 @media (max-width: 925px)
     .main-gallery
         &-block
@@ -180,6 +200,16 @@
     .hero-slider .owl-nav button.owl-next, 
     .hero-slider .owl-nav button.owl-prev
         top: 40%
+@media (max-width: 768px)
+    .online
+        &__title
+            margin: 0 0 25px
+        &-block
+            padding-left: 15px
+            max-width: 640px
+        &-form
+            &-fields
+                max-width: 620px                
 @media (max-width: 700px)
     .hero-slider .owl-nav button.owl-next
         right: 20px
@@ -192,7 +222,9 @@
             &__line
                 margin: 15px auto 5px
     .owl-dots
-        bottom: 30px                                                                    
+        bottom: 30px 
+@media (max-width: 680px)
+                                                                               
 @media (max-width: 670px)
     .header
         &-top

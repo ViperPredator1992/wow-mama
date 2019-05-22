@@ -1,5 +1,6 @@
 .online
     position: relative
+    top: 180px
     &::after
         content: ''
         background: url(../img/online.jpg) no-repeat
@@ -29,7 +30,7 @@
             font-weight: normal
             font-size: 18px       
             color: $menu-link
-            margin: 0 0 40px
+            margin: 0 0 20px
             line-height: 24px
     &-form
         &-field
@@ -48,7 +49,19 @@
                 color: $field
                 &::placeholder 
                     color: $field
-                                            
+        &__button
+            border: none
+            background-color: $line
+            color: $white
+            text-transform: uppercase
+            font-size: 12px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 166px
+            height: 50px
+            border-radius: 30px 
+            font-family: 'Times New Roman', sans-serif                                          
 .selecter
     margin: 0 0 15px
     width: 100%

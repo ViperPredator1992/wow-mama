@@ -759,15 +759,23 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 12px;
   cursor: pointer;
-  padding-bottom: 40px;
+  margin: 15px 0 30px;
 }
 
 .item-check-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3px;
   color: #a7a7a7;
 }
 
@@ -815,7 +823,8 @@ input {
 
 .online-form-field__politic {
   color: #414141;
-  display: block;
+  position: relative;
+  left: 38px;
 }
 
 .inner-checkbox {
@@ -1774,6 +1783,7 @@ input {
 
 .online {
   position: relative;
+  top: 180px;
 }
 
 .online::after {
@@ -1813,7 +1823,7 @@ input {
   font-weight: normal;
   font-size: 18px;
   color: #414141;
-  margin: 0 0 40px;
+  margin: 0 0 20px;
   line-height: 24px;
 }
 
@@ -1857,6 +1867,27 @@ input {
   color: #999999;
 }
 
+.online-form__button {
+  border: none;
+  background-color: #ffb00f;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 166px;
+  height: 50px;
+  border-radius: 30px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
 .selecter {
   margin: 0 0 15px;
   width: 100%;
@@ -1889,6 +1920,12 @@ input {
   border-top: 5px solid #000000;
 }
 
+@media (max-width: 1530px) {
+  .online::after {
+    max-width: 780px;
+  }
+}
+
 @media (max-width: 1280px) {
   .owl-item-block {
     top: 45%;
@@ -1914,6 +1951,10 @@ input {
   .navbar {
     max-width: 720px;
   }
+  .online::after {
+    max-width: 600px;
+    background-position: 50%;
+  }
 }
 
 @media (max-width: 1215px) {
@@ -1928,6 +1969,15 @@ input {
   }
   .main-stoce-inner {
     max-width: none;
+  }
+  .online::after {
+    display: none;
+  }
+  .online-block {
+    margin: auto;
+  }
+  .online__title {
+    text-align: center;
   }
 }
 
@@ -1953,6 +2003,9 @@ input {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .online::after {
+    min-height: 650px;
   }
 }
 
@@ -2094,6 +2147,9 @@ input {
     padding: 180px 0 50px;
     bottom: -110px;
   }
+  .online {
+    top: 110px;
+  }
 }
 
 @media (max-width: 925px) {
@@ -2131,6 +2187,19 @@ input {
   .hero-slider .owl-nav button.owl-next,
   .hero-slider .owl-nav button.owl-prev {
     top: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .online__title {
+    margin: 0 0 25px;
+  }
+  .online-block {
+    padding-left: 15px;
+    max-width: 640px;
+  }
+  .online-form-fields {
+    max-width: 620px;
   }
 }
 
