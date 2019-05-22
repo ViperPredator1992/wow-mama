@@ -2036,7 +2036,18 @@ input {
 
 .creature-speech {
   position: relative;
-  max-width: 570px;
+  max-width: 640px;
+  padding-left: 65px;
+}
+
+.creature-speech::after {
+  content: '';
+  width: 3px;
+  height: 31px;
+  background-color: #ffb00f;
+  position: absolute;
+  top: 5px;
+  left: 0;
 }
 
 .creature-speech__title {
@@ -2044,10 +2055,37 @@ input {
   font-family: 'Times New Roman', sans-serif;
   font-size: 30px;
   color: #414141;
+  margin: 0 0 40px;
 }
 
 .creature-speech__text {
   color: #414141;
+  line-height: 26px;
+  margin: 0 0 25px;
+}
+
+.creature-speech strong {
+  font-family: 'Times New Roman', sans-serif;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.creature__image {
+  margin-top: -100px;
+  display: block;
+}
+
+.creature-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1530px) {
@@ -2112,6 +2150,13 @@ input {
   .online-form::after {
     display: none;
   }
+  .creature-speech {
+    padding-left: 30px;
+    max-width: 570px;
+  }
+  .creature__image {
+    margin-top: -50px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -2159,6 +2204,15 @@ input {
   .header-top .container,
   .header-bottom .container {
     max-width: 1000px;
+  }
+}
+
+@media (max-width: 1113px) {
+  .creature__image {
+    margin: 20px auto 0;
+  }
+  .creature-speech {
+    max-width: none;
   }
 }
 
@@ -2490,6 +2544,22 @@ input {
   }
 }
 
+@media (max-width: 550px) {
+  .creature__title {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .creature-speech {
+    padding-left: 5px;
+  }
+  .creature-speech::after {
+    left: -8px;
+  }
+  .creature-speech__title {
+    margin: 0 0 20px;
+  }
+}
+
 @media (max-width: 500px) {
   .header-top__address {
     display: none;
@@ -2593,9 +2663,24 @@ input {
   .item-check {
     margin: 10px 0 20px;
   }
+  .creature__title {
+    margin: 0 0 20px;
+  }
+  .creature__image {
+    height: 50vh;
+  }
+  .creature-speech__text {
+    margin: 0 0 10px;
+  }
+  .creature-speech strong {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 390px) {
+  .creature__image {
+    height: 40vh;
+  }
   .header-top__address, .header-top__phone, .header-top__personal, .header-top__socials {
     right: 10px;
   }
@@ -2617,6 +2702,12 @@ input {
 @media (max-width: 376px) {
   .online-block__subtitle {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .creature__image {
+    height: 34vh;
   }
 }
 

@@ -45,6 +45,12 @@
         &-form
             &::after
                 display: none
+    .creature
+        &-speech
+            padding-left: 30px
+            max-width: 570px
+        &__image
+            margin-top: -50px                    
 @media (max-width: 1170px)
     .section,
     .section-bg
@@ -78,6 +84,12 @@
     .header-bottom
         & .container
             max-width: 1000px
+@media (max-width: 1113px)
+    .creature
+        &__image
+            margin: 20px auto 0
+        &-speech
+            max-width: none                    
 @media (max-width: 1020px) 
     .header
         &-top
@@ -317,7 +329,18 @@
             &__title
                 margin: 15px 0
             &__text
-                margin: 0 0 15px                                                           
+                margin: 0 0 15px
+@media (max-width: 550px)
+    .creature
+        &__title
+            text-align: center
+            margin: 0 0 30px
+        &-speech
+            padding-left: 5px
+            &::after
+                left: -8px
+            &__title
+                margin: 0 0 20px                                                                                   
 @media (max-width: 500px)
     .header
         &-top
@@ -403,8 +426,21 @@
     .check
         margin-right: 8px
     .item-check
-        margin: 10px 0 20px                                                            
+        margin: 10px 0 20px 
+    .creature
+        &__title
+            margin: 0 0 20px
+        &__image
+            height: 50vh
+        &-speech
+            &__text
+                margin: 0 0 10px
+            & strong
+                margin-bottom: 10px                                                                           
 @media (max-width: 390px)
+    .creature
+        &__image
+            height: 40vh
     .header
         &-top
             &__address,
@@ -431,6 +467,10 @@
         &-block
             &__subtitle
                 font-size: 14px
+@media (max-width: 350px)
+    .creature
+        &__image
+            height: 34vh                
 @media (max-width: 338px)
     .online
         &-block
