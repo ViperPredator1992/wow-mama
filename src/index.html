@@ -373,5 +373,38 @@
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        ymaps.ready(init);
+
+            function init() {
+                // Создание экземпляра карты и его привязка к контейнеру с
+                // заданным id ("map")
+                var myMap = new ymaps.Map('map', {
+                    // При инициализации карты, обязательно нужно указать
+                    // ее центр и коэффициент масштабирования
+                    center: [55.9097, 37.8243], // Нижний Новгород
+                    zoom: 17
+                });
+
+                // Создание метки 
+                var myPlacemark = new ymaps.Placemark(
+                    // Координаты метки
+                    [55.6301, 37.2737], {
+                        // Свойства
+                        // Текст метки
+                        hintContent: 'Оперный театр'
+                    }, {
+                        iconImageHref: 'http://webmap-blog.ru/files/gmap/gicon/mm_20_red.png', // картинка иконки
+                        iconImageSize: [12, 20], // размеры картинки
+                        iconImageOffset: [-6, -10] // смещение картинки
+                    });
+
+
+                // Добавление метки на карту
+                myMap.geoObjects.add(myPlacemark);
+
+
+            }
+    </script>
 </body>
 </html>
