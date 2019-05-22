@@ -41,7 +41,10 @@
         &-block
             margin: auto
         &__title
-            text-align: center                            
+            text-align: center
+        &-form
+            &::after
+                display: none
 @media (max-width: 1170px)
     .section,
     .section-bg
@@ -67,7 +70,9 @@
             margin-bottom: 45px
             &s
                 max-width: 900px
-                margin: auto                                           
+                margin: auto
+        &__link
+            margin: 30px auto 0                                                   
 @media (max-width: 1120px)   
     .header-top,
     .header-bottom

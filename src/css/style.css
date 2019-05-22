@@ -1830,6 +1830,8 @@ input {
   background-color: #f1efea;
   padding-top: 20px;
   position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% calc(100% - 38px), calc(100% -  38px) 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% calc(100% - 38px), calc(100% -  38px) 100%, 0 100%, 0 0);
 }
 
 .online-form::after {
@@ -1840,15 +1842,6 @@ input {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-.online-form::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 38px;
-  height: 38px;
 }
 
 .online-form-field {
@@ -2031,6 +2024,32 @@ input {
           justify-content: space-between;
 }
 
+.team__link {
+  width: 187px;
+  height: 50px;
+  margin: 60px auto 0;
+}
+
+.creature__title {
+  margin: 0 0 60px;
+}
+
+.creature-speech {
+  position: relative;
+  max-width: 570px;
+}
+
+.creature-speech__title {
+  font-style: italic;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 30px;
+  color: #414141;
+}
+
+.creature-speech__text {
+  color: #414141;
+}
+
 @media (max-width: 1530px) {
   .online::after {
     max-width: 780px;
@@ -2090,6 +2109,9 @@ input {
   .online__title {
     text-align: center;
   }
+  .online-form::after {
+    display: none;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -2127,6 +2149,9 @@ input {
   .team-items {
     max-width: 900px;
     margin: auto;
+  }
+  .team__link {
+    margin: 30px auto 0;
   }
 }
 
