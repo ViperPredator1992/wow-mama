@@ -66,7 +66,36 @@
         width: 100%
         flex-basis: 50%
         display: flex
+        flex-direction: column
         justify-content: flex-end
-        max-width: 390px
+        max-width: 420px
     &__title
-        margin: 0           
+        margin: 0 0 60px
+    &-list
+        margin: 0
+        padding: 0
+        list-style-type: none
+        &__item
+            position: relative
+            padding-left: 65px
+            margin-bottom: 40px
+            &::before
+                content: ''
+                width: 3px
+                height: 35px
+                position: absolute
+                left: 0
+                top: 0
+                background-color: $line
+        &__title
+            font-style: italic
+            font-size: 15px
+            color: $contact-title
+            margin-bottom: 10px
+            display: block
+        &__link
+           color: $menu-link
+           font-size: 16px 
+        &__strite
+            color: $menu-link
+            font-size: 16px 

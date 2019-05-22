@@ -2254,14 +2254,58 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  max-width: 390px;
+  max-width: 420px;
 }
 
 .main-contact__title {
+  margin: 0 0 60px;
+}
+
+.main-contact-list {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-contact-list__item {
+  position: relative;
+  padding-left: 65px;
+  margin-bottom: 40px;
+}
+
+.main-contact-list__item::before {
+  content: '';
+  width: 3px;
+  height: 35px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ffb00f;
+}
+
+.main-contact-list__title {
+  font-style: italic;
+  font-size: 15px;
+  color: #a6a39c;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.main-contact-list__link {
+  color: #414141;
+  font-size: 16px;
+}
+
+.main-contact-list__strite {
+  color: #414141;
+  font-size: 16px;
 }
 
 @media (max-width: 1800px) {
