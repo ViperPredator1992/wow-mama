@@ -1,0 +1,24 @@
+.instagram
+    &__title
+        position: relative
+        margin: 0 0 60px
+        padding-bottom: 30px
+        & img
+            display: block
+            margin: auto
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 31px
+            height: 3px
+            background-color: $line
+    &-gallery
+        display: flex
+        align-items: end
+        justify-content: center
+        &__image
+            display: block
+            width: 317px            

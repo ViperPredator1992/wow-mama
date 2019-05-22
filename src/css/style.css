@@ -717,6 +717,10 @@ input {
   background-color: #f1efea;
 }
 
+.section-insta {
+  padding: 110px 0 0;
+}
+
 .section-title {
   font-family: 'Times New Roman', sans-serif;
   font-size: 48px;
@@ -2088,6 +2092,62 @@ input {
           justify-content: space-between;
 }
 
+.instagram__title {
+  position: relative;
+  margin: 0 0 60px;
+  padding-bottom: 30px;
+}
+
+.instagram__title img {
+  display: block;
+  margin: auto;
+}
+
+.instagram__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 31px;
+  height: 3px;
+  background-color: #ffb00f;
+}
+
+.instagram-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.instagram-gallery__image {
+  display: block;
+  width: 317px;
+}
+
+@media (max-width: 1800px) {
+  .instagram-gallery {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 891px;
+    margin: auto;
+  }
+  .instagram-gallery__image {
+    width: 297px;
+  }
+}
+
 @media (max-width: 1530px) {
   .online::after {
     max-width: 780px;
@@ -2164,7 +2224,8 @@ input {
   .section-bg {
     padding: 80px 0;
   }
-  .section-bg-gallery {
+  .section-bg-gallery,
+  .section-insta {
     padding: 80px 0 0;
   }
   .main-services .container {
@@ -2313,7 +2374,8 @@ input {
   .section-bg {
     padding: 50px 0;
   }
-  .section-bg-gallery {
+  .section-bg-gallery,
+  .section-insta {
     padding: 50px 0 0;
   }
   .main-salon {
@@ -2367,6 +2429,12 @@ input {
 @media (max-width: 920px) {
   .main-services .container {
     max-width: 610px;
+  }
+}
+
+@media (max-width: 910px) {
+  .instagram-gallery {
+    max-width: 595px;
   }
 }
 
@@ -2485,6 +2553,12 @@ input {
   }
 }
 
+@media (max-width: 610px) {
+  .instagram-gallery {
+    max-width: 298px;
+  }
+}
+
 @media (max-width: 600px) {
   .team__title {
     padding-bottom: 20px;
@@ -2596,7 +2670,8 @@ input {
   .section-bg {
     padding: 35px 0;
   }
-  .section-bg-gallery {
+  .section-bg-gallery,
+  .section-insta {
     padding: 35px 0 0;
   }
   .section-title {
@@ -2614,6 +2689,10 @@ input {
 }
 
 @media (max-width: 425px) {
+  .instagram__title {
+    padding-bottom: 18px;
+    margin: 0 0 25px;
+  }
   .header-top {
     min-height: 100px;
   }

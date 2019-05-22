@@ -1,3 +1,12 @@
+@media (max-width: 1800px)
+    .instagram
+        &-gallery
+            flex-wrap: wrap
+            justify-content: flex-start
+            max-width: 891px
+            margin: auto
+            &__image
+                width: 297px
 @media (max-width: 1530px)
     .online
         &::after
@@ -55,7 +64,8 @@
     .section,
     .section-bg
         padding: 80px 0
-    .section-bg-gallery
+    .section-bg-gallery,
+    .section-insta
         padding: 80px 0 0    
     .main-services
         & .container
@@ -169,7 +179,8 @@
     .section,
     .section-bg
         padding: 50px 0
-    .section-bg-gallery
+    .section-bg-gallery,
+    .section-insta
         padding: 50px 0 0        
     .main-salon
         margin-top: 60px
@@ -207,6 +218,10 @@
     .main-services 
         & .container
             max-width: 610px
+@media (max-width: 910px)
+    .instagram
+        &-gallery
+            max-width: 595px            
 @media (max-width: 880px)
     .team
         &-item
@@ -291,7 +306,11 @@
             max-width: 270px
             margin: auto
             &__image
-                padding: 0                                          
+                padding: 0
+@media (max-width: 610px)
+    .instagram
+        &-gallery
+            max-width: 298px                                                          
 @media (max-width: 600px)
     .team
         &__title
@@ -374,7 +393,8 @@
     .section,
     .section-bg
         padding: 35px 0
-    .section-bg-gallery
+    .section-bg-gallery,
+    .section-insta
         padding: 35px 0 0    
     .section-title
         font-size: 36px
@@ -388,6 +408,10 @@
                 &__politic
                     max-width: 200px                                                                                                       
 @media (max-width: 425px)
+    .instagram
+        &__title
+            padding-bottom: 18px
+            margin: 0 0 25px
     .header
         &-top
             min-height: 100px
