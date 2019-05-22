@@ -34,21 +34,32 @@
     &-form
         background-color: $main-bg
         padding-top: 20px
-        &::after
+        position: relative
+        // &::after
+        //     content: ''
+        //     background: url(../img/form.png) no-repeat
+        //     width: 49px
+        //     height: 39px
+        //     position: absolute
+        //     bottom: 0
+        //     right: 0
+        &::before
             content: ''
-            background: url(../img/form.png) no-repeat
-            width: 49px
-            height: 39px
             position: absolute
             bottom: 0
             right: 0
-        &::before
-            content: ''
-            width: 38px
-            height: inherit
-            position: absolute
-            bottom: 0
-            right: 0    
+            width: 0
+            height: 0 
+            border-style: solid
+            border-width: 0 0 38px 38px
+            border-color: transparent transparent #333 transparent
+            clip-path: polygon(0% 0%,
+            calc(100% - 38px) 0%,
+            100% 38px,
+            100% 100%,
+            0% 100%)
+
+
         &-field
             max-width: 300px
             &s
