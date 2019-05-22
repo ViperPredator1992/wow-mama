@@ -18,13 +18,39 @@
         max-width: 270px
         width: 100%
         background-color: $white
+        transition: .3s
+        box-shadow: 5px 15px 20px 0px rgba(237,237,237,0.69)
+        &:hover
+            color: $line
         &__image
             & img
                 display: block
         &__master
+            font-family: 'Times New Roman', sans-serif
             font-style: italic
             padding: 30px 0 25px
             text-align: center
             display: block
             color: $master
-            font-size: 15px                
+            font-size: 15px 
+        &__name
+            font-family: 'Times New Roman', sans-serif
+            font-size: 20px
+            text-align: center
+            margin: 0 auto
+            max-width: 190px
+            padding-bottom: 40px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                width: 31px
+                height: 3px
+                background-color: $line                   
+        &s
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between    

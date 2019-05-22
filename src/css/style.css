@@ -1972,6 +1972,15 @@ input {
   max-width: 270px;
   width: 100%;
   background-color: #ffffff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  -webkit-box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
+          box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
+}
+
+.team-item:hover {
+  color: #ffb00f;
 }
 
 .team-item__image img {
@@ -1979,12 +1988,47 @@ input {
 }
 
 .team-item__master {
+  font-family: 'Times New Roman', sans-serif;
   font-style: italic;
   padding: 30px 0 25px;
   text-align: center;
   display: block;
   color: #9d9d9d;
   font-size: 15px;
+}
+
+.team-item__name {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 190px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.team-item__name::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 31px;
+  height: 3px;
+  background-color: #ffb00f;
+}
+
+.team-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1530px) {
@@ -2073,6 +2117,16 @@ input {
   }
   .online::after {
     min-height: 650px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .team-item {
+    margin-bottom: 45px;
+  }
+  .team-items {
+    max-width: 900px;
+    margin: auto;
   }
 }
 
@@ -2217,6 +2271,9 @@ input {
   .online {
     top: 110px;
   }
+  .team {
+    margin-top: 110px;
+  }
 }
 
 @media (max-width: 925px) {
@@ -2231,6 +2288,13 @@ input {
 @media (max-width: 920px) {
   .main-services .container {
     max-width: 610px;
+  }
+}
+
+@media (max-width: 880px) {
+  .team-items {
+    max-width: 580px;
+    margin: auto;
   }
 }
 
@@ -2343,6 +2407,16 @@ input {
 }
 
 @media (max-width: 600px) {
+  .team__title {
+    padding-bottom: 20px;
+    margin: 0 0 40px;
+  }
+  .team-item {
+    margin-bottom: 35px;
+  }
+  .team-items {
+    max-width: 270px;
+  }
   .owl-dot {
     width: 10px;
     height: 10px;

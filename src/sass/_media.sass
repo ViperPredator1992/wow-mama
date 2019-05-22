@@ -60,13 +60,19 @@
                 justify-content: flex-start 
     .online
         &::after
-            min-height: 650px                               
+            min-height: 650px
+@media (max-width: 1150px)
+    .team
+        &-item
+            margin-bottom: 45px
+            &s
+                max-width: 900px
+                margin: auto                                           
 @media (max-width: 1120px)   
     .header-top,
     .header-bottom
         & .container
             max-width: 1000px
-
 @media (max-width: 1020px) 
     .header
         &-top
@@ -170,7 +176,9 @@
             padding: 180px 0 50px
             bottom: -110px
     .online
-        top: 110px             
+        top: 110px
+    .team
+        margin-top: 110px                 
 @media (max-width: 925px)
     .main-gallery
         &-block
@@ -181,7 +189,13 @@
 @media (max-width: 920px)
     .main-services 
         & .container
-            max-width: 610px                                        
+            max-width: 610px
+@media (max-width: 880px)
+    .team
+        &-item
+            &s
+                max-width: 580px
+                margin: auto                                                    
 @media (max-width: 870px)
     .owl-item
         &-block
@@ -262,6 +276,14 @@
             &__image
                 padding: 0                                          
 @media (max-width: 600px)
+    .team
+        &__title
+            padding-bottom: 20px
+            margin: 0 0 40px
+        &-item
+            margin-bottom: 35px
+            &s
+                max-width: 270px            
     .owl-dot
         width: 10px
         height: 10px
