@@ -362,9 +362,9 @@
             </div>
         </section>
         <section class="section main-contact">
-            <div class="ymap-container map" id="map">
+            <div class="ymap-container">
                 <div class="loader loader-default"></div>
-                <div id="map-yandex"></div>
+                <div class="map" id="map-yandex"></div>
             </div>
             <div class="container">
                 <h2 class="section-title main-contact__title">Связаться с нами</h2>
@@ -387,47 +387,5 @@
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=(7175574e-517b-4eb2-a94c-953f62e69909)&lang=ru_RU"></script>
-    <script>
-        ymaps.ready(init);
-
-            function init() {
-                var myMap = new ymaps.Map("map", {
-                    // Центр карты, указываем коордианты
-                    center: [55.9097, 37.8243],
-                    // Масштаб, тут все просто
-                    zoom: 17,
-                    // Отключаем все элементы управления
-                    controls: []
-                });
-
-                var myGeoObjects = [];
-
-                // Наша метка, указываем коордианты
-                myGeoObjects = new ymaps.Placemark([55.6301, 37.2737], {
-                    balloonContentBody: 'Текст в балуне',
-                }, {
-                        iconLayout: 'default#image',
-                        // Путь до нашей картинки
-                        iconImageHref: '/src/img/map-logo.png',
-                        // Размер по ширине и высоте
-                        iconImageSize: [78, 79],
-                        // Смещение левого верхнего угла иконки относительно
-                        // её «ножки» (точки привязки).
-                        iconImageOffset: [-35, -35]
-                    });
-
-                var clusterer = new ymaps.Clusterer({
-                    clusterDisableClickZoom: false,
-                    clusterOpenBalloonOnClick: false,
-                });
-
-                clusterer.add(myGeoObjects);
-                myMap.geoObjects.add(clusterer);
-                // Отлючаем возможность изменения масштаба
-                //myMap.behaviors.disable('scrollZoom');
-
-            }
-    </script>
 </body>
 </html>
