@@ -2409,7 +2409,48 @@ input {
 
 .gallery__title {
   padding-bottom: 40px;
-  margin: 0 0 55px;
+  margin: 0 0 45px;
+}
+
+.gallery-professions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery-professions__link {
+  font-weight: bold;
+  font-size: 13px;
+  color: #444444;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  text-transform: uppercase;
+  margin: 0 12px;
+}
+
+.gallery-professions__link:hover {
+  color: #ffb00f;
+}
+
+.gallery-professions-block {
+  width: 270px;
+}
+
+.gallery-professions-blocks {
+  margin-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-professions-block__image img {
+  display: block;
 }
 
 .footer .container {
