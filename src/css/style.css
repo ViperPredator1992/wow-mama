@@ -3506,6 +3506,12 @@ input {
   .contact-wrap .section-contact {
     margin-top: 25px;
   }
+  .contact-block .ymap-container {
+    background-position: 35% 0;
+  }
+  .contact-wrap .section-container {
+    padding: 35px 0 0;
+  }
 }
 
 @media (max-width: 473px) {
@@ -3636,6 +3642,9 @@ input {
   }
   .ymap-container {
     background-position: -120px;
+  }
+  .contact-block .ymap-container {
+    background-position: 40% 0;
   }
 }
 
