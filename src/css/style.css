@@ -758,6 +758,28 @@ input {
   font-weight: bold;
 }
 
+.title {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 48px;
+  color: #414141;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 31px;
+  height: 3px;
+  background-color: #ffb00f;
+}
+
 .socials__link {
   display: inline-block;
 }
@@ -2333,6 +2355,15 @@ input {
   background: url(../img/stoce/stoce-bg.jpg) center no-repeat;
 }
 
+.promotions__title {
+  padding-bottom: 40px;
+  margin: 0 0 70px;
+}
+
+.online-entry .online {
+  top: 0;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2394,6 +2425,12 @@ input {
   }
   .instagram-gallery__image {
     width: 297px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .online::after {
+    max-width: 870px;
   }
 }
 
