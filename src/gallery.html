@@ -341,6 +341,38 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            var $grid = $('.gallery-professions-blocks').isotope({
+                itemSelector: '.gallery-block'
+            });
+
+            var filters = {};
+
+            $('.filters').on('change', function (event) {
+                var $select = $(event.target);
+                // get group key
+                var filterGroup = $select.attr('value-group');
+                // set filter for group
+                filters[filterGroup] = event.target.value;
+                // combine filters
+                var filterValue = concatValues(filters);
+                // set filter for Isotope
+                $grid.isotope({
+                    filter: filterValue
+                });
+            });
+
+            // flatten object by concatting values
+            function concatValues(obj) {
+                var value = '';
+                for (var prop in obj) {
+                    value += obj[prop];
+                }
+                return value;
+            }
+        });
+    </script>
     <script src="js/infinite-scroll.pkgd.min.js"></script>
     <script>
         $(document).ready(function () {

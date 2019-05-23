@@ -123,7 +123,12 @@
         &__image
             margin: 20px auto 0
         &-speech
-            max-width: none                                 
+            max-width: none
+@media (max-width: 1025px)
+    .gallery
+        &-professions
+            &__link
+                margin: 0 6px                                              
 @media (max-width: 1020px) 
     .header
         &-top
@@ -320,7 +325,31 @@
             padding-left: 0
             justify-content: center
     .ymap-container
-        top: 400px                                                                                  
+        top: 400px
+    .gallery
+        &-professions
+            display: none
+    .filters
+        display: block 
+    .filters .selecter
+        margin: 0 auto
+        border-bottom: none
+    .filters .selecter-selected
+        padding: 14px 16px
+    .filters .selecter-selected:after
+        right: 16px
+    .filters .selecter-options
+        border: none
+        max-height: 190px
+    .gallery
+        &__title
+            padding-bottom: 15px
+            margin: 0 0 25px
+        &-professions
+            &-block
+                margin: 0 6px 40px
+                &s
+                    margin: 30px auto 0                                                                                                                     
 @media (max-width: 925px)
     .main-gallery
         &-block
@@ -341,7 +370,11 @@
             max-width: 595px
 @media (max-width: 895px)
     .online-form-field__politic
-        max-width: 500px                        
+        max-width: 500px 
+    .gallery
+        &-professions
+            &-blocks
+                max-width: 565px                           
 @media (max-width: 880px)
     .team
         &-item
@@ -445,7 +478,11 @@
 @media (max-width: 610px)
     .instagram
         &-gallery
-            max-width: 298px                                                          
+            max-width: 298px
+    .gallery
+        &-professions
+            &-blocks
+                max-width: 280px                                                                       
 @media (max-width: 600px)
     .team
         &__title
