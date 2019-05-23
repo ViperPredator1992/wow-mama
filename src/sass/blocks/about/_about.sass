@@ -6,12 +6,21 @@
         padding-bottom: 40px
         margin: 0 0 45px
     &-us
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
+        &__image
+            display: inline-block
+            width: 100%
+            max-width: 490px
+            float: left
+            margin-right: 25px
         &-content
-            width: 55%
             &__title
                 margin: 0 0 60px
+            & p    
                 color: $menu-link
-                line-height: 26px    
+                line-height: 26px
+                margin: 0 0 30px 
+.clear
+    clear: both  
+.about-carousel .owl-item img
+    width: 300px
+    box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);                    

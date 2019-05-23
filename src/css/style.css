@@ -2581,25 +2581,32 @@ input {
   margin: 0 0 45px;
 }
 
-.about-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.about-us-content {
-  width: 55%;
+.about-us__image {
+  display: inline-block;
+  width: 100%;
+  max-width: 490px;
+  float: left;
+  margin-right: 25px;
 }
 
 .about-us-content__title {
   margin: 0 0 60px;
+}
+
+.about-us-content p {
   color: #414141;
   line-height: 26px;
+  margin: 0 0 30px;
+}
+
+.clear {
+  clear: both;
+}
+
+.about-carousel .owl-item img {
+  width: 300px;
+  -webkit-box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
+          box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
 }
 
 .footer .container {
