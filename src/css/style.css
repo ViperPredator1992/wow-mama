@@ -2913,6 +2913,9 @@ input {
   .main-services .container {
     max-width: 610px;
   }
+  .main-services-blocks {
+    max-width: 580px;
+  }
 }
 
 @media (max-width: 910px) {
@@ -3144,6 +3147,13 @@ input {
   }
 }
 
+@media (max-width: 520px) {
+  .banner-title {
+    font-size: 28px;
+    letter-spacing: .6rem;
+  }
+}
+
 @media (max-width: 500px) {
   .header-top__address {
     display: none;
@@ -3192,6 +3202,13 @@ input {
   }
   .online__title {
     margin: 0 0 15px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .services__title {
+    padding-bottom: 15px;
+    margin: 0 0 35px;
   }
 }
 
@@ -3304,6 +3321,10 @@ input {
   }
   .main-salon-block-left__text::before {
     left: -10px;
+  }
+  .banner-title {
+    font-size: 24px;
+    letter-spacing: .4rem;
   }
 }
 

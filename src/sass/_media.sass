@@ -326,6 +326,9 @@
     .main-services 
         & .container
             max-width: 610px
+        &-block
+            &s
+                max-width: 580px    
 @media (max-width: 910px)
     .instagram
         &-gallery
@@ -485,7 +488,11 @@
             &::after
                 left: -8px
             &__title
-                margin: 0 0 20px                                                                                   
+                margin: 0 0 20px
+@media (max-width: 520px)
+    .banner-title
+        font-size: 28px
+        letter-spacing: .6rem                                                                                                  
 @media (max-width: 500px)
     .header
         &-top
@@ -529,6 +536,12 @@
     .online
         &__title
             margin: 0 0 15px
+    .title
+        font-size: 38px
+    .services
+        &__title
+            padding-bottom: 15px
+            margin: 0 0 35px                
 @media (max-width: 473px)
     .online
         &-form
@@ -628,7 +641,10 @@
                 &__text
                     padding-left: 0
                     &::before
-                        left: -10px                                                                                                                                                    
+                        left: -10px
+    .banner-title
+        font-size: 24px
+        letter-spacing: .4rem                                                                                                                                                                            
 @media (max-width: 376px)
     .online
         &-block
