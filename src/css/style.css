@@ -2661,6 +2661,12 @@ input {
   }
 }
 
+@media (max-width: 895px) {
+  .online-form-field__politic {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 880px) {
   .team-items {
     max-width: 580px;
@@ -2691,6 +2697,13 @@ input {
   }
 }
 
+@media (max-width: 812px) {
+  .main-contact__title {
+    font-size: 34px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .online__title {
     margin: 0 0 25px;
@@ -2704,9 +2717,14 @@ input {
   }
 }
 
-@media (max-width: 733px) {
-  .online-form-field__politic {
-    max-width: 500px;
+@media (max-width: 717px) {
+  .main-contact-wrap {
+    width: 100%;
+    right: 0;
+  }
+  .main-contact-list {
+    max-width: 300px;
+    margin: auto;
   }
 }
 
@@ -2983,6 +3001,10 @@ input {
   .creature-speech strong {
     margin-bottom: 10px;
   }
+  .ymap-container {
+    top: 365px;
+    background-position: -100px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -3011,6 +3033,15 @@ input {
   .online-block__subtitle {
     font-size: 14px;
   }
+  .main-contact-list {
+    max-width: 270px;
+  }
+  .main-contact-list__item {
+    padding-left: 15px;
+  }
+  .ymap-container {
+    background-position: -120px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -3020,6 +3051,9 @@ input {
 }
 
 @media (max-width: 338px) {
+  .ymap-container {
+    background-position: -150px;
+  }
   .online-block {
     padding-left: 0;
   }

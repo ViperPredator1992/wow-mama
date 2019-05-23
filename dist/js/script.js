@@ -885,7 +885,7 @@ $(document).ready(function () {
         }
     });
 
-    $("select").selecter();
+    $("select").selecter(); 
 
     //Переменная для включения/отключения индикатора загрузки
     var spinner = $('.ymap-container').children('.loader');
@@ -894,25 +894,27 @@ $(document).ready(function () {
     //Необходимые переменные для того, чтобы задать координаты на Яндекс.Карте
     var myMapTemp, myPlacemarkTemp;
 
-    //Функция создания карты сайта и затем вставки ее в блок с идентификатором "map-yandex"
+    //Функция создания карты сайта и затем вставки ее в блок с идентификатором &#34;map-yandex&#34;
     function init() {
         var myMapTemp = new ymaps.Map("map-yandex", {
-            center: [55.730138, 37.594238], // координаты центра на карте
-            zoom: 7, // коэффициент приближения карты
+            center: [55.9097, 37.8244], // координаты центра на карте
+            zoom: 17, // коэффициент приближения карты
             controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
         });
-        var myPlacemarkTemp = new ymaps.GeoObject({
-            geometry: {
-                type: "Point",
-                coordinates: [55.730138, 37.594238] // координаты, где будет размещаться флажок на карте
-            }
-        });
-        myMapTemp.geoObjects.add(myPlacemarkTemp); // помещаем флажок на карту
 
+        myMapTemp.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark([55.9097, 37.8243], {}, {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-logo.png',
+            iconImageSize: [78, 79],
+            iconImageOffset: [-35, -45]
+        });
+        myMapTemp.geoObjects.add(myPlacemark);
         // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
         var layer = myMapTemp.layers.get(0).get(0);
 
-        // Решение по callback-у для определния полной загрузки карты
+        // Решение по callback-у для определения полной загрузки карты
         waitForTilesLoad(layer).then(function () {
             // Скрываем индикатор загрузки после полной загрузки карты
             spinner.removeClass('is-active');
@@ -975,7 +977,7 @@ $(document).ready(function () {
         document.getElementsByTagName("head")[0].appendChild(script);
     }
 
-    // Основная функция, которая проверяет когда мы навели на блок с классом "ymap-container"
+    // Основная функция, которая проверяет когда мы навели на блок с классом &#34;ymap-container&#34;
     var ymap = function () {
         $('.ymap-container').mouseenter(function () {
             if (!check_if_load) { // проверяем первый ли раз загружается Яндекс.Карта, если да, то загружаем
@@ -988,14 +990,18 @@ $(document).ready(function () {
 
                 // Загружаем API Яндекс.Карт
                 loadScript("https://api-maps.yandex.ru/2.1/?apikey=(7175574e-517b-4eb2-a94c-953f62e69909)&lang=ru_RU", function () {
-                    // Как только API Яндекс.Карт загрузились, сразу формируем карту и помещаем в блок с идентификатором "map-yandex"
+                    // Как только API Яндекс.Карт загрузились, сразу формируем карту и помещаем в блок с идентификатором &#34;map-yandex&#34;
                     ymaps.load(init);
                 });
             }
         });
     }
+
     $(function () {
+
+        //Запускаем основную функцию
         ymap();
+
     });
 
 });
