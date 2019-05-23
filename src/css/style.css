@@ -3023,7 +3023,24 @@ input {
     margin: 0 0 40px;
   }
   .contact-wrap .section-contact {
-    margin-top: 20px;
+    margin-top: 10px;
+    min-height: 935px;
+  }
+  .contact-wrap .section-container {
+    padding: 50px 0 0;
+  }
+  .contact__title {
+    padding-bottom: 15px;
+    margin: 0 0 30px;
+  }
+  .contact-block .ymap-container {
+    max-width: 50%;
+  }
+  .contact-block-left__title {
+    font-size: 40px;
+  }
+  .contact-block-left__subtitle {
+    margin-bottom: 30px;
   }
 }
 
@@ -3056,6 +3073,42 @@ input {
   }
   .section-footer {
     margin-top: 790px;
+  }
+  .contact-block {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-block .ymap-container {
+    max-width: none;
+    position: static;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    background: url(../img/map2.jpg) no-repeat;
+  }
+  .contact-block-left .main-contact-social {
+    margin-bottom: 30px;
+    padding-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-block-left__title {
+    padding-top: 0;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 5px;
+  }
+  .contact-block-left__subtitle {
+    text-align: center;
+    max-width: none;
+    margin-bottom: 20px;
   }
 }
 
@@ -3449,6 +3502,9 @@ input {
   .services__title {
     padding-bottom: 15px;
     margin: 0 0 35px;
+  }
+  .contact-wrap .section-contact {
+    margin-top: 25px;
   }
 }
 
