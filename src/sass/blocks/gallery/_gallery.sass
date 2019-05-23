@@ -15,14 +15,27 @@
             transition: .3s
             text-transform: uppercase
             margin: 0 12px
-            &:hover
+            &:hover,
+            &.current
                 color: $line
         &-block
-            width: 270px
+            max-width: 270px
+            width: 100%
+            margin-bottom: 70px
             &s
                 margin-top: 65px
                 display: flex        
             &__image
                 & img
                     display: block
+                    margin-bottom: 25px
+            &__text
+                text-align: center
+                font-size: 13px
+                line-height: 20px
+                color: $gallery
+                margin: 0 auto
+                width: 220px 
+        &__btn
+                          
                                

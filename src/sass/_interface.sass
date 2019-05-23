@@ -251,3 +251,18 @@ input
         top: 10px
     .navbar
         max-width: none !important 
+
+
+.isotope
+    transition-property: height,width  
+.isotope, 
+.isotope .isotope-item
+    transition-duration: .8s       
+.isotope .isotope-item
+    transition-property: transform,opacity
+.isotope .isotope-item.no-transition,
+.isotope.no-transition,
+.isotope.no-transition .isotope-item
+    transition-duration: 0s
+.isotope .infinite-scrolling
+    transition: none        

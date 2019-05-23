@@ -1064,6 +1064,41 @@ input {
   }
 }
 
+.isotope {
+  -webkit-transition-property: height,width;
+  -o-transition-property: height,width;
+  transition-property: height,width;
+}
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: .8s;
+       -o-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: opacity,-webkit-transform;
+  transition-property: opacity,-webkit-transform;
+  -o-transition-property: transform,opacity;
+  transition-property: transform,opacity;
+  transition-property: transform,opacity,-webkit-transform;
+}
+
+.isotope .isotope-item.no-transition,
+.isotope.no-transition,
+.isotope.no-transition .isotope-item {
+  -webkit-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.isotope .infinite-scrolling {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
 .header-top {
   background-color: #4d4843;
   min-height: 55px;
@@ -2434,12 +2469,14 @@ input {
   margin: 0 12px;
 }
 
-.gallery-professions__link:hover {
+.gallery-professions__link:hover, .gallery-professions__link.current {
   color: #ffb00f;
 }
 
 .gallery-professions-block {
-  width: 270px;
+  max-width: 270px;
+  width: 100%;
+  margin-bottom: 70px;
 }
 
 .gallery-professions-blocks {
@@ -2451,6 +2488,16 @@ input {
 
 .gallery-professions-block__image img {
   display: block;
+  margin-bottom: 25px;
+}
+
+.gallery-professions-block__text {
+  text-align: center;
+  font-size: 13px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0 auto;
+  width: 220px;
 }
 
 .footer .container {
