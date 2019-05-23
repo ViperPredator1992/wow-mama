@@ -84,7 +84,9 @@
         &::after
             min-height: 650px
     #map-yandex
-        height: 530px            
+        height: 530px
+    .section-footer
+        margin-top: 368px                    
 @media (max-width: 1150px)
     .team
         &-item
@@ -99,6 +101,9 @@
     .header-bottom
         & .container
             max-width: 1000px
+    .footer
+        &-navbar
+            max-width: 750px            
 @media (max-width: 1113px)
     .creature
         &__image
@@ -214,6 +219,35 @@
         margin-top: 110px
     #map-yandex
         height: 490px
+    .section-footer
+        margin-top: 388px        
+    .footer
+        & .container
+            flex-direction: column
+            align-items: center
+        &-navbar
+            max-width: 360px
+            &__text
+                text-align: center
+            &__link
+                margin-bottom: 25px        
+        &-block
+            flex-direction: column
+            & .menu
+                width: auto
+                & ul
+                    border-top: none 
+                &-list
+                    min-height: 300px
+                    text-align: center
+                    display: block
+                    &__item:first-child
+                        border-top: none
+                    &__item
+                        background-color: transparent
+                        border-bottom: none
+                    &__link
+                        font-size: 13px                       
 @media (max-width: 1000px)
     .ymap-container
         top: 460px
