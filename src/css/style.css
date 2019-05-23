@@ -2571,6 +2571,37 @@ input {
   margin-bottom: 65px;
 }
 
+.about-banner {
+  margin-top: 130px;
+  background: url(../img/about/about.jpg) center no-repeat;
+}
+
+.about__title {
+  padding-bottom: 40px;
+  margin: 0 0 45px;
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us-content {
+  width: 55%;
+}
+
+.about-us-content__title {
+  margin: 0 0 60px;
+  color: #414141;
+  line-height: 26px;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
