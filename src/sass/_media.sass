@@ -10,11 +10,19 @@
 @media (max-width: 1700px)
     .online
         &::after
-            max-width: 870px                
+            max-width: 870px
+    .contact
+        &-block
+            & .ymap-container
+                max-width: 870px                            
 @media (max-width: 1530px)
     .online
         &::after
             max-width: 780px
+    .contact
+        &-block
+            & .ymap-container
+                max-width: 780px             
 @media (max-width: 1370px)
     .ymap-container
         background-position: 30% -2px            
@@ -40,7 +48,11 @@
     .online
         &::after
             max-width: 600px
-            background-position: 50%        
+            background-position: 50%
+    .contact
+        &-block
+            & .ymap-container
+                max-width: 600px                     
 @media (max-width: 1215px)
     .main-gallery
         & .container
@@ -101,7 +113,20 @@
     #map-yandex
         height: 530px
     .section-footer
-        margin-top: 368px                    
+        margin-top: 368px
+    .contact-wrap
+        & .section-contact
+            margin-top: 50px
+            min-height: 1090px
+    .contact
+        &-block
+            &-left
+                &__title
+                    padding-top: 20px
+                    margin: 0 0 10px
+    .contact-wrap
+        & .section-container
+            padding: 80px 0 0                                                    
 @media (max-width: 1150px)
     .team
         &-item
@@ -277,8 +302,10 @@
     .promotions
         &__title
             padding-bottom: 20px
-            margin: 0 0 40px                                                               
-
+            margin: 0 0 40px
+    .contact-wrap
+        & .section-contact
+            margin-top: 20px                
 @media (max-width: 1000px)
     .ymap-container
         top: 460px
