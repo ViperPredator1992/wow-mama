@@ -727,6 +727,30 @@ input {
   background-color: #f1efea;
 }
 
+.section-name {
+  margin-top: 130px;
+}
+
+.banner-title {
+  text-transform: uppercase;
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 246px;
+  margin: 0;
+  letter-spacing: .8rem;
+}
+
 .section-title {
   font-family: 'Times New Roman', sans-serif;
   font-size: 48px;
@@ -2303,6 +2327,10 @@ input {
 
 .main-contact-social__link:nth-child(2) {
   margin: 0 15px;
+}
+
+.promotions-banner {
+  background: url(../img/stoce/stoce-bg.jpg) center no-repeat;
 }
 
 .footer .container {
