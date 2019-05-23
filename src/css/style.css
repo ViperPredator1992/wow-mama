@@ -731,6 +731,11 @@ input {
   background-color: #f1efea;
 }
 
+.main-footer {
+  padding: 35px 0 40px;
+  background-color: #f1efea;
+}
+
 .section-name {
   margin-top: 130px;
 }
@@ -1692,6 +1697,8 @@ input {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  -webkit-box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
+          box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
 }
 
 .main-services-block__link {
@@ -2387,6 +2394,15 @@ input {
   top: 0;
 }
 
+.services-banner {
+  background: url(../img/services/services.jpg) center no-repeat;
+}
+
+.services__title {
+  padding-bottom: 40px;
+  margin: 0 0 55px;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2560,6 +2576,8 @@ input {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    max-width: 870px;
+    margin: auto;
   }
   .online::after {
     min-height: 650px;
@@ -2857,6 +2875,9 @@ input {
   }
   .promotions .main-stoce-inner__text {
     margin: 0 0 20px;
+  }
+  .promotions .main-stoce-inner__title {
+    margin: 15px 0;
   }
 }
 
@@ -3249,6 +3270,18 @@ input {
   .ymap-container {
     top: 365px;
     background-position: -100px;
+  }
+  .promotions .main-stoce-block {
+    margin-bottom: 25px;
+  }
+  .promotions .main-stoce-block__image {
+    margin-bottom: 0;
+  }
+  .promotions .main-stoce-inner__text {
+    margin: 0 0 10px;
+  }
+  .promotions .main-stoce-inner__title {
+    font-size: 20px;
   }
 }
 
