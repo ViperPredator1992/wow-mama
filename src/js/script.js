@@ -1006,7 +1006,7 @@ $(document).ready(function () {
 
     $('.about-carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 0,
         nav: true,
         responsive: {
             0: {
