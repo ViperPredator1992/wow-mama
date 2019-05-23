@@ -2682,13 +2682,14 @@ input {
             flex-direction: column;
   }
   .footer-block .menu {
+    top: -35px;
     width: auto;
   }
   .footer-block .menu ul {
     border-top: none;
   }
   .footer-block .menu-list {
-    min-height: 300px;
+    min-height: 270px;
     text-align: center;
     display: block;
   }
@@ -2730,6 +2731,9 @@ input {
   }
   #map-yandex {
     height: 410px;
+  }
+  .section-footer {
+    margin-top: 790px;
   }
 }
 
@@ -2826,6 +2830,9 @@ input {
   }
   .online-form-fields {
     max-width: 620px;
+  }
+  .section-footer {
+    margin-top: 740px;
   }
 }
 
