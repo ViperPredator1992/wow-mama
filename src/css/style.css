@@ -1099,6 +1099,14 @@ input {
   transition: none;
 }
 
+.page-load-status {
+  display: none;
+  padding-top: 20px;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  color: #777;
+}
+
 .header-top {
   background-color: #4d4843;
   min-height: 55px;
@@ -2476,7 +2484,7 @@ input {
 .gallery-professions-block {
   max-width: 270px;
   width: 100%;
-  margin-bottom: 70px;
+  margin: 0 11px 70px;
 }
 
 .gallery-professions-blocks {
@@ -2498,6 +2506,12 @@ input {
   color: #444444;
   margin: 0 auto;
   width: 220px;
+}
+
+.gallery-professions__btn {
+  width: 187px;
+  height: 50px;
+  margin: auto;
 }
 
 .footer .container {

@@ -199,8 +199,57 @@
                         <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
                         </p>
                     </div>
+                    <div class="gallery-professions-block cosmetology children-menu gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery2.jpg" alt="gallery2">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
+                    <div class="gallery-professions-block cosmetology children-menu gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery5.jpg" alt="gallery5">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
+                    <div class="gallery-professions-block cosmetology gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery4.jpg" alt="gallery4">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
+                    <div class="gallery-professions-block cosmetology gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery7.jpg" alt="gallery7">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
+                    <div class="gallery-professions-block cosmetology gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery2.jpg" alt="gallery2">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
+                    <div class="gallery-professions-block cosmetology gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery5.jpg" alt="gallery5">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
+                    <div class="gallery-professions-block cosmetology gallery-block">
+                        <div class="gallery-professions-block__image">
+                            <img src="img/gallery/gallery4.jpg" alt="gallery4">
+                        </div>
+                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
+                        </p>
+                    </div>
                 </div>
-                <a href="#" class="gallery-professions__btn links">Показать еще</a>
+                <button class="gallery-professions__btn links view-more-button">Показать еще</button>
             </div> 
         </section>
         <div class="online-entry">
@@ -306,6 +355,39 @@
         });
     </script>
     <script src="js/infinite-scroll.pkgd.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var nextPenSlugs = [
+            '3d9a3b8092ebcf9bc4a72672b81df1ac',
+            '2cde50c59ea73c47aec5bd26343ce287',
+            'd83110c5f71ea23ba5800b6b1a4a95c4',
+            ];
+
+            function getPenPath() {
+                var slug = nextPenSlugs[ this.loadCount ];
+                if ( slug ) {
+                    return 'https://s.codepen.io/desandro/debug/' + slug;
+                }
+            }
+
+            $('.gallery-professions-blocks').infiniteScroll({
+                path: getPenPath,
+                append: '.gallery-professions-block',
+                button: '.view-more-button',
+                // using button, disable loading on scroll
+                history: false,
+                scrollThreshold: false,
+                status: '.page-load-status',
+            });
+
+            //append: '.top-preview',
+            // history: false,
+            //hideNav: '.pagination',
+            //status: '.page-load-status',
+            
+        });
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>
