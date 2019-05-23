@@ -90,6 +90,18 @@
                     <a href="#" data-filter=".brow-bar" class="gallery-professions__link">Brow Bar</a>
                     <a href="#" data-filter=".podology" class="gallery-professions__link">Подология</a>
                 </div>
+                <div class="filters">
+                    <select class="gallery-professions__select select filter-select">
+                        <option value=".hair-salon">Парикмахерский зал</option>
+                        <option value=".make-up">Make Up</option>
+                        <option value=".manicure">Ногтевой сервис</option>
+                        <option value=".depilation">Депиляция</option>
+                        <option value=".children-menu">Детское меню</option>
+                        <option value=".cosmetology">Косметология</option>
+                        <option value=".brow-bar">Brow Bar</option>
+                        <option value=".podology">Подология</option>
+                    </select>
+                </div>
                 <div class="gallery-professions-blocks">
                     <div class="gallery-professions-block cosmetology hair-salon gallery-block">
                         <div class="gallery-professions-block__image">
@@ -213,41 +225,16 @@
                         <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
                         </p>
                     </div>
-                    <div class="gallery-professions-block cosmetology gallery-block">
-                        <div class="gallery-professions-block__image">
-                            <img src="img/gallery/gallery4.jpg" alt="gallery4">
-                        </div>
-                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
-                        </p>
+                </div>
+                <div class="page-load-status">
+                    <div class="loader-ellips infinite-scroll-request">
+                        <span class="loader-ellips__dot"></span>
+                        <span class="loader-ellips__dot"></span>
+                        <span class="loader-ellips__dot"></span>
+                        <span class="loader-ellips__dot"></span>
                     </div>
-                    <div class="gallery-professions-block cosmetology gallery-block">
-                        <div class="gallery-professions-block__image">
-                            <img src="img/gallery/gallery7.jpg" alt="gallery7">
-                        </div>
-                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
-                        </p>
-                    </div>
-                    <div class="gallery-professions-block cosmetology gallery-block">
-                        <div class="gallery-professions-block__image">
-                            <img src="img/gallery/gallery2.jpg" alt="gallery2">
-                        </div>
-                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
-                        </p>
-                    </div>
-                    <div class="gallery-professions-block cosmetology gallery-block">
-                        <div class="gallery-professions-block__image">
-                            <img src="img/gallery/gallery5.jpg" alt="gallery5">
-                        </div>
-                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
-                        </p>
-                    </div>
-                    <div class="gallery-professions-block cosmetology gallery-block">
-                        <div class="gallery-professions-block__image">
-                            <img src="img/gallery/gallery4.jpg" alt="gallery4">
-                        </div>
-                        <p class="gallery-professions-block__text">Нарядный маникюр в светлом цвете на короткие ногти
-                        </p>
-                    </div>
+                    <p class="infinite-scroll-last">Конец содержания</p>
+                    <p class="infinite-scroll-error">Конец></p>
                 </div>
                 <button class="gallery-professions__btn links view-more-button">Показать еще</button>
             </div> 
@@ -381,11 +368,6 @@
                 status: '.page-load-status',
             });
 
-            //append: '.top-preview',
-            // history: false,
-            //hideNav: '.pagination',
-            //status: '.page-load-status',
-            
         });
     </script>
     <script src="js/script.js"></script>

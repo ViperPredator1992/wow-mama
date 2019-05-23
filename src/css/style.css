@@ -2496,6 +2496,7 @@ input {
 
 .gallery-professions-block__image img {
   display: block;
+  width: 270px;
   margin-bottom: 25px;
 }
 
@@ -2512,6 +2513,11 @@ input {
   width: 187px;
   height: 50px;
   margin: auto;
+  background-color: #ffffff;
+}
+
+.filters {
+  display: none;
 }
 
 .footer .container {
@@ -2630,6 +2636,10 @@ input {
 @media (max-width: 1215px) {
   .main-gallery .container {
     max-width: 906px;
+  }
+  .gallery-professions-blocks {
+    max-width: 880px;
+    margin: 60px auto 0;
   }
 }
 
