@@ -1,5 +1,47 @@
 .brend
     &__title
-        margin: 0
+        font-family: 'Times New Roman', sans-serif
+        margin: 0 0 60px
         font-size: 48px
         color: $menu-link
+        padding-bottom: 40px
+        text-align: center
+        position: relative
+        &::after
+            content: ''
+            background-color: $line
+            width: 31px
+            height: 3px
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%)
+    &-slider
+        margin-bottom: 40px
+.brend-carousel .owl-nav.disabled
+    display: block
+.brend-carousel .owl-dots
+    display: none
+.brend-carousel .owl-stage
+    display: flex
+    align-items: center    
+.brend-carousel .owl-nav button.owl-prev,
+.brend-carousel .owl-nav button.owl-next
+    position: absolute
+    top: 10px
+    background-color: $main-bg
+    color: $menu-link
+    font-size: 18px
+    border-radius: 50%
+    width: 55px
+    height: 55px
+.brend-carousel .owl-nav button.owl-next
+    right: -80px
+.brend-carousel .owl-nav button.owl-prev
+    left: -80px        
+.brend-carousel .owl-item img
+    max-width: 180px
+    margin: auto
+.brend-carousel.owl-loaded
+    max-width: 940px
+    margin: auto                           

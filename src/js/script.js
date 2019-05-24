@@ -1019,6 +1019,26 @@ $(document).ready(function () {
                 items: 3
             }
         }
-    })
+    });
+
+    $('.brend-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            681: {
+                items: 2
+            },
+            911: {
+                items: 3
+            },
+            1140: {
+                items: 4
+            }
+        }
+    });
 
 });
