@@ -608,7 +608,17 @@
                 flex-direction: column
                 align-items: center
             &__button
-                margin: auto                                                                               
+                margin: auto
+    .brend-carousel.owl-loaded
+        max-width: 400px
+    .brend-carousel .owl-nav button.owl-prev
+        left: 0
+    .brend-carousel .owl-nav button.owl-next
+        right: 0 
+    .brend
+        &__title
+            max-width: 360px
+            margin: 0 auto 30px                                                                                                          
 @media (max-width: 670px)
     .header
         &-top
@@ -847,7 +857,11 @@
                 &-text
                     padding-left: 0
                     &::before
-                        left: -10px                                                                                                                                                                     
+                        left: -10px
+    .brend
+        &__title
+            font-size: 30px
+            max-width: 300px                                                                                                                                                                                             
 @media (max-width: 390px)
     .creature
         &__image
@@ -879,7 +893,17 @@
     .about-carousel .owl-nav button.owl-prev
         left: 60px 
     .about-carousel .owl-nav button.owl-next
-        right: 60px                                                                                                                                                                                    
+        right: 60px
+    .brend-carousel .owl-nav button.owl-prev, 
+    .brend-carousel .owl-nav button.owl-next
+        top: auto
+        bottom: -80px
+    .brend-carousel .owl-nav button.owl-prev
+        left: 60px 
+    .brend-carousel .owl-nav button.owl-next
+        right: 60px
+    .brend
+        min-height: 240px                                                                                                                                                                                                
 @media (max-width: 376px)
     .online
         &-block
@@ -897,7 +921,9 @@
 @media (max-width: 350px)
     .creature
         &__image
-            height: 34vh                
+            height: 34vh
+    .brend
+        min-height: 270px                            
 @media (max-width: 338px)
     .ymap-container
         background-position: -150px
@@ -915,4 +941,6 @@
     .online
         &-block
             &__subtitle
-                font-size: 16px                                                           
+                font-size: 16px
+    .brend
+        min-height: 280px                                                                           
