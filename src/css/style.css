@@ -2774,6 +2774,15 @@ input {
   margin: auto;
 }
 
+.cosmetology-banner {
+  background: url(../img/services/services.jpg) center no-repeat;
+}
+
+.cosmetology__title {
+  padding-bottom: 40px;
+  margin: 0 0 45px;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
