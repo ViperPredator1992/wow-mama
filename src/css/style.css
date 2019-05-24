@@ -2586,7 +2586,19 @@ input {
   width: 100%;
   max-width: 490px;
   float: left;
-  margin-right: 25px;
+  padding-right: 25px;
+  position: relative;
+  margin-right: 65px;
+}
+
+.about-us__image::before {
+  content: '';
+  background-color: #ffb00f;
+  width: 3px;
+  height: 31px;
+  position: absolute;
+  top: 120px;
+  right: 0;
 }
 
 .about-us-content__title {
@@ -2599,8 +2611,16 @@ input {
   margin: 0 0 30px;
 }
 
+.about-us-content__second-title {
+  margin: 120px 0 60px;
+}
+
 .clear {
   clear: both;
+}
+
+.slide-about {
+  margin-bottom: 50px;
 }
 
 .about-carousel .owl-item img {
@@ -2615,6 +2635,33 @@ input {
 
 .about-carousel .owl-nav.disabled {
   display: block;
+}
+
+.about-carousel .owl-nav button.owl-prev,
+.about-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+  background-color: #f1efea;
+  border-radius: 50%;
+  color: #414141;
+  font-size: 20px;
+  font-weight: bold;
+  width: 55px;
+  height: 55px;
+}
+
+.about-carousel .owl-nav button.owl-next {
+  right: -100px;
+}
+
+.about-carousel .owl-nav button.owl-prev {
+  left: -100px;
+}
+
+.about-carousel .owl-nav button.owl-prev:focus,
+.about-carousel .owl-nav button.owl-next:focus {
+  color: #ffffff;
+  background-color: #ffb00f;
 }
 
 .footer .container {
