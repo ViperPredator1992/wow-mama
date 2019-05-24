@@ -2615,6 +2615,35 @@ input {
   margin: 120px 0 60px;
 }
 
+.about-us-content__second-text {
+  position: relative;
+  color: #414141;
+  line-height: 26px;
+  margin: 0 0 50px;
+  padding-left: 65px;
+}
+
+.about-us-content__second-text::before {
+  content: '';
+  background-color: #ffb00f;
+  width: 3px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-us-content__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .clear {
   clear: both;
 }
@@ -3335,10 +3364,30 @@ input {
     float: none;
     margin-right: 0;
     padding-right: 0;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .about-us__image::before {
+    display: none;
   }
   .about-us__image img {
     margin: auto;
     display: block;
+  }
+  .about-us-content__title {
+    text-align: center;
+  }
+  .about-us-content__second-title {
+    text-align: center;
+  }
+  .slide-about {
+    margin: 35px 0;
+  }
+  .about-carousel .owl-nav button.owl-prev {
+    left: -40px;
+  }
+  .about-carousel .owl-nav button.owl-next {
+    right: -40px;
   }
 }
 
@@ -3385,6 +3434,18 @@ input {
   .main-contact__title {
     font-size: 34px;
     text-align: center;
+  }
+}
+
+@media (max-width: 809px) {
+  .about-carousel.owl-loaded {
+    max-width: 450px;
+  }
+  .about-carousel .owl-nav button.owl-prev {
+    left: 0;
+  }
+  .about-carousel .owl-nav button.owl-next {
+    right: 0;
   }
 }
 
@@ -3644,6 +3705,20 @@ input {
   .contact-wrap .section-container {
     padding: 35px 0 0;
   }
+  .about-carousel .owl-nav button.owl-prev,
+  .about-carousel .owl-nav button.owl-next {
+    top: auto;
+    bottom: -70px;
+  }
+  .about-carousel .owl-nav button.owl-prev {
+    left: 100px;
+  }
+  .about-carousel .owl-nav button.owl-next {
+    right: 100px;
+  }
+  .slide-about {
+    margin: 30px 0 80px;
+  }
 }
 
 @media (max-width: 473px) {
@@ -3759,6 +3834,12 @@ input {
   .banner-title {
     font-size: 24px;
     letter-spacing: .4rem;
+  }
+  .about-carousel .owl-nav button.owl-prev {
+    left: 60px;
+  }
+  .about-carousel .owl-nav button.owl-next {
+    right: 60px;
   }
 }
 

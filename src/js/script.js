@@ -1012,7 +1012,7 @@ $(document).ready(function () {
             0: {
                 items: 1
             },
-            768: {
+            810: {
                 items: 2
             },
             1140: {

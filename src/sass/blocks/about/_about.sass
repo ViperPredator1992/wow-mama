@@ -31,7 +31,26 @@
                 margin: 0 0 30px
             &__second
                 &-title
-                    margin: 120px 0 60px    
+                    margin: 120px 0 60px
+                &-text
+                    position: relative
+                    color: $menu-link
+                    line-height: 26px
+                    margin: 0 0 50px
+                    padding-left: 65px
+                    &::before
+                        content: ''
+                        background-color: $line
+                        width: 3px
+                        height: 31px
+                        position: absolute
+                        top: 0
+                        left: 0
+            &__image
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                & i                 
 .clear
     clear: both
 .slide-about

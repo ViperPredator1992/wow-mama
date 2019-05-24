@@ -466,9 +466,25 @@
             float: none
             margin-right: 0
             padding-right: 0
+            max-width: 100%
+            margin-bottom: 40px
+            &::before
+                display: none
             & img
                 margin: auto
-                display: block 
+                display: block
+        &-content
+            &__title
+                text-align: center
+            &__second
+                &-title
+                    text-align: center
+    .slide-about
+        margin: 35px 0
+    .about-carousel .owl-nav button.owl-prev
+        left: -40px
+    .about-carousel .owl-nav button.owl-next
+        right: -40px                                             
 @media (max-width: 895px)
     .online-form-field__politic
         max-width: 500px 
@@ -504,7 +520,14 @@
     .main-contact
         &__title
             font-size: 34px
-            text-align: center        
+            text-align: center
+@media (max-width: 809px)
+    .about-carousel.owl-loaded
+        max-width: 450px
+    .about-carousel .owl-nav button.owl-prev
+        left: 0
+    .about-carousel .owl-nav button.owl-next
+        right: 0                            
 @media (max-width: 768px)
     .online
         &__title
@@ -692,7 +715,17 @@
     .contact-block .ymap-container
         background-position: 35% 0
     .contact-wrap .section-container
-        padding: 35px 0 0                                    
+        padding: 35px 0 0
+    .about-carousel .owl-nav button.owl-prev,
+    .about-carousel .owl-nav button.owl-next 
+        top: auto
+        bottom: -70px
+    .about-carousel .owl-nav button.owl-prev
+        left: 100px 
+    .about-carousel .owl-nav button.owl-next
+        right: 100px                      
+    .slide-about
+        margin: 30px 0 80px                                               
 @media (max-width: 473px)
     .online
         &-form
@@ -795,7 +828,11 @@
                         left: -10px
     .banner-title
         font-size: 24px
-        letter-spacing: .4rem                                                                                                                                                                            
+        letter-spacing: .4rem
+    .about-carousel .owl-nav button.owl-prev
+        left: 60px 
+    .about-carousel .owl-nav button.owl-next
+        right: 60px                                                                                                                                                                                    
 @media (max-width: 376px)
     .online
         &-block
