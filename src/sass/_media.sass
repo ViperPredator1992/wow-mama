@@ -88,7 +88,14 @@
             padding-left: 30px
             max-width: 570px
         &__image
-            margin-top: -50px                    
+            margin-top: -50px 
+    .about-us
+        &-content
+            &__image
+                max-width: 1000px
+                margin: auto
+                & img
+                    max-width: 480px                               
 @media (max-width: 1170px)
     .section,
     .section-bg
@@ -137,10 +144,15 @@
                 margin: 0 0 20px
             & p
                 margin: 0 0 10px
+            &__second
+                &-title
+                    margin: 70px 0 50px
+                &-text
+                    padding-left: 20px    
         &__image
             margin-right: 40px
             &::before
-                top: 80px                                                                        
+                top: 80px                                                                                 
 @media (max-width: 1150px)
     .team
         &-item
@@ -342,7 +354,20 @@
                 &__subtitle
                     margin-bottom: 30px 
     .about-banner
-        margin-top: 60px                                                                             
+        margin-top: 60px
+    .about-us
+        &-content
+            &__image
+                flex-direction: column
+                align-items: center
+                & img
+                    margin-bottom: 20px
+                    max-width: 100%
+            &__second
+                &-title
+                    margin: 40px 0
+                &-text
+                    margin: 0 0 20px !important                                                                                                   
 @media (max-width: 1000px)
     .ymap-container
         top: 460px
@@ -800,7 +825,16 @@
                     &__text
                         margin: 0 0 10px
                     &__title
-                        font-size: 20px                                                                                                                       
+                        font-size: 20px
+    .about-us
+        &-content
+            &__second
+                &-title
+                    margin: 25px 0
+                &-text
+                    padding-left: 0
+                    &::before
+                        left: -10px                                                                                                                                                                     
 @media (max-width: 390px)
     .creature
         &__image

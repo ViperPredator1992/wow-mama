@@ -2617,9 +2617,7 @@ input {
 
 .about-us-content__second-text {
   position: relative;
-  color: #414141;
-  line-height: 26px;
-  margin: 0 0 50px;
+  margin: 0 0 50px !important;
   padding-left: 65px;
 }
 
@@ -2642,6 +2640,11 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.about-us-content__image img {
+  display: block;
+  max-width: 560px;
 }
 
 .clear {
@@ -2691,6 +2694,16 @@ input {
 .about-carousel .owl-nav button.owl-next:focus {
   color: #ffffff;
   background-color: #ffb00f;
+}
+
+.team-wrap .team {
+  margin-top: 0;
+}
+
+.brend__title {
+  margin: 0;
+  font-size: 48px;
+  color: #414141;
 }
 
 .footer .container {
@@ -2857,6 +2870,13 @@ input {
   .creature__image {
     margin-top: -50px;
   }
+  .about-us-content__image {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .about-us-content__image img {
+    max-width: 480px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -2914,6 +2934,12 @@ input {
   }
   .about-us-content p {
     margin: 0 0 10px;
+  }
+  .about-us-content__second-title {
+    margin: 70px 0 50px;
+  }
+  .about-us-content__second-text {
+    padding-left: 20px;
   }
   .about-us__image {
     margin-right: 40px;
@@ -3190,6 +3216,25 @@ input {
   }
   .about-banner {
     margin-top: 60px;
+  }
+  .about-us-content__image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-us-content__image img {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+  .about-us-content__second-title {
+    margin: 40px 0;
+  }
+  .about-us-content__second-text {
+    margin: 0 0 20px !important;
   }
 }
 
@@ -3808,6 +3853,15 @@ input {
   }
   .promotions .main-stoce-inner__title {
     font-size: 20px;
+  }
+  .about-us-content__second-title {
+    margin: 25px 0;
+  }
+  .about-us-content__second-text {
+    padding-left: 0;
+  }
+  .about-us-content__second-text::before {
+    left: -10px;
   }
 }
 

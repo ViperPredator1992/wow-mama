@@ -34,9 +34,7 @@
                     margin: 120px 0 60px
                 &-text
                     position: relative
-                    color: $menu-link
-                    line-height: 26px
-                    margin: 0 0 50px
+                    margin: 0 0 50px !important
                     padding-left: 65px
                     &::before
                         content: ''
@@ -50,7 +48,9 @@
                 display: flex
                 flex-wrap: wrap
                 justify-content: space-between
-                & i                 
+                & img
+                    display: block
+                    max-width: 560px                 
 .clear
     clear: both
 .slide-about
@@ -82,3 +82,5 @@
 .about-carousel .owl-nav button.owl-next:focus
     color: $white
     background-color: $line                                            
+.team-wrap .team
+    margin-top: 0    
