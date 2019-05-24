@@ -52,7 +52,11 @@
     .contact
         &-block
             & .ymap-container
-                max-width: 600px                     
+                max-width: 600px
+    .about-carousel .owl-nav button.owl-next
+        right: -60px
+    .about-carousel .owl-nav button.owl-prev
+        left: -60px                                     
 @media (max-width: 1215px)
     .main-gallery
         & .container
@@ -126,7 +130,17 @@
                     margin: 0 0 10px
     .contact-wrap
         & .section-container
-            padding: 80px 0 0                                                    
+            padding: 80px 0 0
+    .about-us
+        &-content
+            &__title
+                margin: 0 0 20px
+            & p
+                margin: 0 0 10px
+        &__image
+            margin-right: 40px
+            &::before
+                top: 80px                                                                        
 @media (max-width: 1150px)
     .team
         &-item
@@ -135,7 +149,11 @@
                 max-width: 900px
                 margin: auto
         &__link
-            margin: 30px auto 0                                                   
+            margin: 30px auto 0
+    .about-carousel .owl-dots
+        display: none
+    .about-carousel.owl-loaded
+        max-width: 700px                                                               
 @media (max-width: 1120px)   
     .header-top,
     .header-bottom
@@ -322,7 +340,9 @@
                 &__title
                     font-size: 40px
                 &__subtitle
-                    margin-bottom: 30px                                                      
+                    margin-bottom: 30px 
+    .about-banner
+        margin-top: 60px                                                                             
 @media (max-width: 1000px)
     .ymap-container
         top: 460px
@@ -419,7 +439,10 @@
             &-block
                 margin: 0 6px 40px
                 &s
-                    margin: 30px auto 0                                                                                                                     
+                    margin: 30px auto 0
+    .about-us
+        &__image
+            margin-right: 10px                                                                                                                                         
 @media (max-width: 925px)
     .main-gallery
         &-block
@@ -438,6 +461,14 @@
     .instagram
         &-gallery
             max-width: 595px
+    .about-us
+        &__image
+            float: none
+            margin-right: 0
+            padding-right: 0
+            & img
+                margin: auto
+                display: block 
 @media (max-width: 895px)
     .online-form-field__politic
         max-width: 500px 

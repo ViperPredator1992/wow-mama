@@ -2620,7 +2620,7 @@ input {
 }
 
 .slide-about {
-  margin-bottom: 50px;
+  margin: 30px 0 50px;
 }
 
 .about-carousel .owl-item img {
@@ -2784,6 +2784,12 @@ input {
   .contact-block .ymap-container {
     max-width: 600px;
   }
+  .about-carousel .owl-nav button.owl-next {
+    right: -60px;
+  }
+  .about-carousel .owl-nav button.owl-prev {
+    left: -60px;
+  }
 }
 
 @media (max-width: 1215px) {
@@ -2874,6 +2880,18 @@ input {
   .contact-wrap .section-container {
     padding: 80px 0 0;
   }
+  .about-us-content__title {
+    margin: 0 0 20px;
+  }
+  .about-us-content p {
+    margin: 0 0 10px;
+  }
+  .about-us__image {
+    margin-right: 40px;
+  }
+  .about-us__image::before {
+    top: 80px;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -2886,6 +2904,12 @@ input {
   }
   .team__link {
     margin: 30px auto 0;
+  }
+  .about-carousel .owl-dots {
+    display: none;
+  }
+  .about-carousel.owl-loaded {
+    max-width: 700px;
   }
 }
 
@@ -3135,6 +3159,9 @@ input {
   .contact-block-left__subtitle {
     margin-bottom: 30px;
   }
+  .about-banner {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -3277,6 +3304,9 @@ input {
   .gallery-professions-blocks {
     margin: 30px auto 0;
   }
+  .about-us__image {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 925px) {
@@ -3300,6 +3330,15 @@ input {
 @media (max-width: 910px) {
   .instagram-gallery {
     max-width: 595px;
+  }
+  .about-us__image {
+    float: none;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .about-us__image img {
+    margin: auto;
+    display: block;
   }
 }
 
