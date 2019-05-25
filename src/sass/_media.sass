@@ -1,12 +1,12 @@
-@media (max-width: 1800px)
-    .instagram
-        &-gallery
-            flex-wrap: wrap
-            justify-content: flex-start
-            max-width: 891px
-            margin: auto
-            &__image
-                width: 297px
+// @media (max-width: 1800px)
+//     .instagram
+//         &-gallery
+//             flex-wrap: wrap
+//             justify-content: flex-start
+//             max-width: 891px
+//             margin: auto
+//             &__image
+//                 width: 297px
 @media (max-width: 1700px)
     .online
         &::after
@@ -537,9 +537,9 @@
             &s
                 max-width: 580px    
 @media (max-width: 910px)
-    .instagram
-        &-gallery
-            max-width: 595px
+    // .instagram
+    //     &-gallery
+    //         max-width: 595px
     .about-us
         &__image
             float: none
@@ -577,7 +577,11 @@
     .gallery
         &-professions
             &-blocks
-                max-width: 565px                           
+                max-width: 565px
+    .instagram
+        &-gallery
+            &__image
+                width: 33.33%                                           
 @media (max-width: 880px)
     .team
         &-item
@@ -735,9 +739,9 @@
             &__image
                 padding: 0
 @media (max-width: 610px)
-    .instagram
-        &-gallery
-            max-width: 298px
+    // .instagram
+    //     &-gallery
+    //         max-width: 298px
     .gallery
         &-professions
             &-blocks
@@ -883,17 +887,31 @@
         &__title
             padding-bottom: 18px
             margin: 0 0 25px
+        &-gallery
+            &__image
+                width: 50%    
     .header
         &-top
-            min-height: 100px
+            min-height: 225px
+            &__logo
+                top: 40px
             &__phone
                 bottom: 40px
-                left: auto
-                right: 0
+                // left: auto
+                // right: 0
+                left: 45%
+                transform: translateX(-45%)
             &__socials
-                bottom: 4px
+                bottom: 5px
+                left: 50%
+                transform: translateX(-50%)
+                right: auto
+                margin-right: 0
             &__personal
-                top: 4px        
+                top: 4px
+                right: auto
+                left: 50%
+                transform: translateX(-50%)       
             &__logo
                 width: 100px
                 // left: 0
@@ -970,11 +988,12 @@
             height: 40vh
     .header
         &-top
-            &__address,
+           // &__address,
             &__phone,
-            &__personal,
-            &__socials
-                right: 10px 
+            // &__personal,
+            // &__socials
+                left: 47%
+                transform: translateX(-47%) 
     .owl-item
         &-block
             &__title
@@ -1019,7 +1038,11 @@
     .ymap-container
         background-position: -120px
     .contact-block .ymap-container
-        background-position: 40% 0                                    
+        background-position: 40% 0
+    .instagram
+        &-gallery
+            &__image
+                width: 100%                                        
 @media (max-width: 350px)
     .creature
         &__image

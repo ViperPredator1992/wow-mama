@@ -2296,6 +2296,8 @@ input {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2303,7 +2305,7 @@ input {
 
 .instagram-gallery__image {
   display: block;
-  width: 317px;
+  width: 16.66%;
 }
 
 .ymap-container {
@@ -3034,21 +3036,6 @@ input {
           justify-content: space-between;
 }
 
-@media (max-width: 1800px) {
-  .instagram-gallery {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    max-width: 891px;
-    margin: auto;
-  }
-  .instagram-gallery__image {
-    width: 297px;
-  }
-}
-
 @media (max-width: 1700px) {
   .online::after {
     max-width: 870px;
@@ -3734,9 +3721,6 @@ input {
 }
 
 @media (max-width: 910px) {
-  .instagram-gallery {
-    max-width: 595px;
-  }
   .about-us__image {
     float: none;
     margin-right: 0;
@@ -3782,6 +3766,9 @@ input {
   }
   .gallery-professions-blocks {
     max-width: 565px;
+  }
+  .instagram-gallery__image {
+    width: 33.33%;
   }
 }
 
@@ -3999,9 +3986,6 @@ input {
 }
 
 @media (max-width: 610px) {
-  .instagram-gallery {
-    max-width: 298px;
-  }
   .gallery-professions-blocks {
     max-width: 280px;
   }
@@ -4195,19 +4179,38 @@ input {
     padding-bottom: 18px;
     margin: 0 0 25px;
   }
+  .instagram-gallery__image {
+    width: 50%;
+  }
   .header-top {
-    min-height: 100px;
+    min-height: 225px;
+  }
+  .header-top__logo {
+    top: 40px;
   }
   .header-top__phone {
     bottom: 40px;
-    left: auto;
-    right: 0;
+    left: 45%;
+    -webkit-transform: translateX(-45%);
+        -ms-transform: translateX(-45%);
+            transform: translateX(-45%);
   }
   .header-top__socials {
-    bottom: 4px;
+    bottom: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    right: auto;
+    margin-right: 0;
   }
   .header-top__personal {
     top: 4px;
+    right: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .header-top__logo {
     width: 100px;
@@ -4291,9 +4294,6 @@ input {
   .creature__image {
     height: 40vh;
   }
-  .header-top__address, .header-top__phone, .header-top__personal, .header-top__socials {
-    right: 10px;
-  }
   .owl-item-block__title {
     font-size: 20px;
     letter-spacing: .5rem;
@@ -4348,6 +4348,9 @@ input {
   }
   .contact-block .ymap-container {
     background-position: 40% 0;
+  }
+  .instagram-gallery__image {
+    width: 100%;
   }
 }
 
