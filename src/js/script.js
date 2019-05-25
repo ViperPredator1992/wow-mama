@@ -1051,10 +1051,14 @@ $(document).ready(function () {
 
     //     }
 
+    
     $('.cosmetology-menu-list__link').click(function (e) {
         e.preventDefault();
-        if ($('.cosmetology-menu-list__inner').) {
-            
+        if ($(this).next().hasClass('open')) {
+            $(this).next().removeClass('open');
+        } else {
+            $('.accordion').next().removeClass('open');
+            $(this).next().addClass('open');
         }
     })
 

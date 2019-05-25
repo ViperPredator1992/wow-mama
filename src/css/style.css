@@ -2908,6 +2908,10 @@ input {
   display: none;
 }
 
+.cosmetology-menu-list__inner.open {
+  display: block;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
