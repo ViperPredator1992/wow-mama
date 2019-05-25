@@ -1041,4 +1041,24 @@ $(document).ready(function () {
         }
     });
 
+    // $('.cosmetology-menu-list__link').click(function (e) {
+    //     e.preventDefault();
+    //     if ($(this).hasClass('cosmetology-open')) {
+    //         $(this).removeClass('cosmetology-open');
+    //     } else {
+    //         $('.accordion').removeClass('cosmetology-open');
+    //         $(this).addClass('cosmetology-open');
+
+    //     }
+    // });
+
+    // $('.cosmetology-menu-list__link').click(function (e) {
+    //     e.preventDefault();
+    //     if ($(this)) {
+            
+    //     }
+    // })
+
+    $('.cosmetology-menu-list__link')юршву( )
+
 });
