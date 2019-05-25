@@ -1054,7 +1054,15 @@ $(document).ready(function () {
         }
     });
 
-    $('.menu a').click(function () {
+    $('.header-bottom__link').click(function () {
+        var el = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(el).offset().top - $("header").height()
+        }, 2000);
+        return false;
+    });
+
+    $('.footer-navbar__link').click(function () {
         var el = $(this).attr('href');
         $('html,body').animate({
             scrollTop: $(el).offset().top - $("header").height()
