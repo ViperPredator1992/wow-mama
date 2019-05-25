@@ -2837,7 +2837,7 @@ input {
   padding: 0;
   list-style-type: none;
   position: relative;
-  height: 750px;
+  height: 780px;
   overflow-y: scroll;
 }
 
@@ -2896,6 +2896,8 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3197,6 +3199,12 @@ input {
   }
 }
 
+@media (max-width: 1160px) {
+  .cosmetology-menu-list__inner {
+    max-width: 760px;
+  }
+}
+
 @media (max-width: 1150px) {
   .team-item {
     margin-bottom: 45px;
@@ -3233,6 +3241,9 @@ input {
   .brend-carousel.owl-loaded {
     max-width: 740px;
   }
+  .cosmetology-menu-list__inner {
+    max-width: 720px;
+  }
 }
 
 @media (max-width: 1113px) {
@@ -3241,6 +3252,12 @@ input {
   }
   .creature-speech {
     max-width: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .cosmetology-menu-list__inner {
+    max-width: 660px;
   }
 }
 
@@ -3493,6 +3510,12 @@ input {
   .about-us-content__second-text {
     margin: 0 0 20px !important;
   }
+  .cosmetology-menu-list__inner {
+    max-width: 620px;
+  }
+  .cosmetology-menu-list__inner-title {
+    margin: 20px 0 10px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -3586,6 +3609,9 @@ input {
   .promotions .main-stoce-inner__title {
     margin: 15px 0;
   }
+  .cosmetology-menu-list__inner {
+    max-width: 580px;
+  }
 }
 
 @media (max-width: 940px) {
@@ -3637,6 +3663,20 @@ input {
   }
   .about-us__image {
     margin-right: 10px;
+  }
+  .cosmetology__title {
+    padding-bottom: 20px;
+    margin: 0 0 30px 300px;
+    height: 75px;
+  }
+  .cosmetology-menu {
+    margin-top: -95px;
+  }
+  .cosmetology-menu-list__inner {
+    max-width: 520px;
+  }
+  .cosmetology-menu-list__inner-item {
+    padding: 0 20px;
   }
 }
 
@@ -3715,6 +3755,15 @@ input {
     max-width: 580px;
     margin: auto;
   }
+  .cosmetology-menu-list {
+    height: 680px;
+  }
+  .cosmetology-menu-list__inner {
+    max-width: 470px;
+  }
+  .cosmetology-menu-list__inner-item {
+    padding: 5px 15px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -3737,6 +3786,28 @@ input {
   .hero-slider .owl-nav button.owl-next,
   .hero-slider .owl-nav button.owl-prev {
     top: 40%;
+  }
+}
+
+@media (max-width: 830px) {
+  .cosmetology__title {
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .cosmetology__title::after {
+    left: 50%;
+  }
+  .cosmetology-menu {
+    margin: 0;
+  }
+  .cosmetology-menu-list__inner {
+    position: static;
+  }
+  .cosmetology-menu-list__link {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
