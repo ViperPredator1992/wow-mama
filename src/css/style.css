@@ -4211,10 +4211,6 @@ input {
   }
   .header-top__logo {
     width: 100px;
-    left: 0;
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
   }
   .header-top__logo img {
     width: auto;
