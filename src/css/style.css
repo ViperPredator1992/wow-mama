@@ -1855,6 +1855,10 @@ input {
   height: 50px;
 }
 
+.main-stoce-top__link-stoce {
+  display: block;
+}
+
 .main-stoce-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1927,6 +1931,10 @@ input {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.main-gallery-block a {
+  display: block;
 }
 
 .main-gallery-block__image {
@@ -2468,6 +2476,10 @@ input {
 .promotions__title {
   padding-bottom: 40px;
   margin: 0 0 70px;
+}
+
+.promotions__link-title {
+  display: block;
 }
 
 .promotions .main-stoce-inner {
