@@ -1057,7 +1057,7 @@ $(document).ready(function () {
     $('.header-bottom__link').click(function () {
         var el = $(this).attr('href');
         $('html,body').animate({
-            scrollTop: $(el).offset().top - $("header").height()
+            scrollTop: $(el).offset().top
         }, 2000);
         return false;
     });
@@ -1065,7 +1065,7 @@ $(document).ready(function () {
     $('.footer-navbar__link').click(function () {
         var el = $(this).attr('href');
         $('html,body').animate({
-            scrollTop: $(el).offset().top - $("header").height()
+            scrollTop: $(el).offset().top
         }, 2000);
         return false;
     });
