@@ -6,6 +6,11 @@
         padding-bottom: 40px
         margin: 0 0 55px 300px
         max-width: 310px
+        height: 95px
+        overflow: hidden
+        position: relative
+        z-index: 10
+        background-color: $white
         &::after
             left: 0
             transform: translateX(0)
@@ -18,8 +23,8 @@
             padding: 0
             list-style-type: none
             position: relative
-            // height: 1070px
-            // overflow-y: scroll
+            height: 1070px
+            overflow-y: scroll
             &__item
                 margin-bottom: 8px
             &__link
@@ -48,13 +53,12 @@
                     top: 20px
                     left: 0 
             &__inner
-                max-width: 860px
+                max-width: 850px
                 width: 100%
-                margin-top: 95px
                 position: absolute
+                margin-top: 95px
                 top: 0
                 right: 0
-                
                 &-item
                     display: flex
                     align-items: center

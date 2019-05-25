@@ -1052,6 +1052,8 @@ $(document).ready(function () {
             $('.cosmetology-menu-list__link').removeClass('bg');
             $(this).addClass('bg');
         }
-    })
+    });
+
+    jQuery('.scrollbar-rail').scrollbar();
 
 });

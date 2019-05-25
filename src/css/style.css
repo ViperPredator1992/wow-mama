@@ -1108,6 +1108,31 @@ input {
   color: #777;
 }
 
+.cosmetology-menu-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cosmetology-menu-list::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-color: #ffb00f;
+  background-color: #ffb00f;
+}
+
+.cosmetology-menu-list::-webkit-scrollbar-thumb:hover {
+  border-width: 1px 1px 1px 2px;
+  border-color: #ffb00f;
+  background-color: #ffb00f;
+}
+
+.cosmetology-menu-list::-webkit-scrollbar-track {
+  border-width: 1px 1px 1px 2px;
+}
+
+.cosmetology-menu-list::-webkit-scrollbar-track:hover {
+  border-left: solid 1px #ffb00f;
+  background-color: #ffb00f;
+}
+
 .header-top {
   background-color: #4d4843;
   min-height: 55px;
@@ -2783,6 +2808,11 @@ input {
   padding-bottom: 40px;
   margin: 0 0 55px 300px;
   max-width: 310px;
+  height: 95px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  background-color: #ffffff;
 }
 
 .cosmetology__title::after {
@@ -2808,6 +2838,8 @@ input {
   padding: 0;
   list-style-type: none;
   position: relative;
+  height: 1070px;
+  overflow-y: scroll;
 }
 
 .cosmetology-menu-list__item {
@@ -2853,10 +2885,10 @@ input {
 }
 
 .cosmetology-menu-list__inner {
-  max-width: 860px;
+  max-width: 850px;
   width: 100%;
-  margin-top: 95px;
   position: absolute;
+  margin-top: 95px;
   top: 0;
   right: 0;
 }
