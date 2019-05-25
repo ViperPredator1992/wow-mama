@@ -2807,7 +2807,6 @@ input {
   text-align: left;
   padding-bottom: 40px;
   margin: 0 0 55px 300px;
-  max-width: 310px;
   height: 95px;
   overflow: hidden;
   position: relative;
@@ -2838,7 +2837,7 @@ input {
   padding: 0;
   list-style-type: none;
   position: relative;
-  height: 1070px;
+  height: 750px;
   overflow-y: scroll;
 }
 
@@ -2869,7 +2868,7 @@ input {
           box-shadow: 5px 15px 20px 0px rgba(237, 237, 237, 0.69);
 }
 
-.cosmetology-menu-list__link:hover {
+.cosmetology-menu-list__link:hover, .cosmetology-menu-list__link.bg {
   background-color: #ffb00f;
   color: #ffffff;
 }
@@ -2885,7 +2884,7 @@ input {
 }
 
 .cosmetology-menu-list__inner {
-  max-width: 850px;
+  max-width: 860px;
   width: 100%;
   position: absolute;
   margin-top: 95px;
@@ -3074,6 +3073,12 @@ input {
   }
   .about-carousel .owl-nav button.owl-prev {
     left: -60px;
+  }
+  .cosmetology__title {
+    margin: 0 0 55px 300px;
+  }
+  .cosmetology-menu-list__inner {
+    max-width: 800px;
   }
 }
 

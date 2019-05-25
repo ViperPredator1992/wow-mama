@@ -1054,6 +1054,4 @@ $(document).ready(function () {
         }
     });
 
-    jQuery('.scrollbar-rail').scrollbar();
-
 });
