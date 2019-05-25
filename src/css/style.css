@@ -2810,11 +2810,13 @@ input {
 }
 
 .cosmetology-menu-list__item {
+  position: relative;
   margin-bottom: 8px;
 }
 
 .cosmetology-menu-list__link {
   font-family: 'Times New Roman', sans-serif;
+  font-weight: normal;
   width: 270px;
   height: 72px;
   background-color: #ffffff;
@@ -2848,6 +2850,58 @@ input {
   position: absolute;
   top: 20px;
   left: 0;
+}
+
+.cosmetology-menu-list__inner {
+  max-width: 860px;
+  width: 100%;
+  margin-top: 135px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.cosmetology-menu-list__inner-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px 0 35px;
+  min-height: 46px;
+}
+
+.cosmetology-menu-list__inner-item:nth-child(odd) {
+  background-color: #f6f4f0;
+}
+
+.cosmetology-menu-list__inner-item:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.cosmetology-menu-list__inner-title {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 24px;
+  color: #414141;
+  margin: 0 0 30px;
+}
+
+.cosmetology-menu-list__inner-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cosmetology-menu-list__inner-name {
+  color: #414141;
+}
+
+.cosmetology-menu-list__inner-price {
+  color: #414141;
 }
 
 .footer .container {
