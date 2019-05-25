@@ -1040,25 +1040,17 @@ $(document).ready(function () {
             }
         }
     });
-
-    // $('.cosmetology-menu-list__link').click(function (e) {
-    //     e.preventDefault();
-    //     if ($(this).hasClass('cosmetology-open')) {
-    //         $(this).removeClass('cosmetology-open');
-    //     } else {
-    //         $('.accordion').removeClass('cosmetology-open');
-    //         $(this).addClass('cosmetology-open');
-
-    //     }
-
     
     $('.cosmetology-menu-list__link').click(function (e) {
         e.preventDefault();
         if ($(this).next().hasClass('open')) {
             $(this).next().removeClass('open');
+            $(this).removeClass('bg')
         } else {
-            $('.accordion').next().removeClass('open');
+            $('.cosmetology-menu-list__link').next().removeClass('open');
             $(this).next().addClass('open');
+            $('.cosmetology-menu-list__link').removeClass('bg');
+            $(this).addClass('bg');
         }
     })
 

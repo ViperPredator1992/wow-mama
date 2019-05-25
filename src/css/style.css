@@ -2807,10 +2807,10 @@ input {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: relative;
 }
 
 .cosmetology-menu-list__item {
-  position: relative;
   margin-bottom: 8px;
 }
 
@@ -2859,6 +2859,7 @@ input {
   position: absolute;
   top: 0;
   right: 0;
+  min-height: 1170px;
 }
 
 .cosmetology-menu-list__inner-item {
@@ -2910,6 +2911,11 @@ input {
 
 .cosmetology-menu-list__inner.open {
   display: block;
+}
+
+.cosmetology-menu-list__link.bg {
+  background-color: #ffb00f;
+  color: #ffffff;
 }
 
 .footer .container {
