@@ -617,15 +617,30 @@
             margin: 0 0 30px
             &::after
                 left: 50%
-                tra
+                transform: translateX(-50%)
         &-menu
             margin: 0
             &-list
+                overflow-y: visible
+                height: auto
                 &__inner
                     position: static
+                    max-width: none
+                    margin-top: 0
+                    height: 210px
+                    overflow-y: scroll
                 &__link
                     padding: 0
-                    justify-content: center                            
+                    justify-content: center
+                    width: 100% 
+                    &::after
+                        content: ''
+                        background-color: $line
+                        width: 3px
+                        height: 31px
+                        position: absolute
+                        top: 20px
+                        right: 0
 @media (max-width: 812px)
     .main-contact
         &__title
@@ -776,6 +791,17 @@
                 left: -8px
             &__title
                 margin: 0 0 20px
+    .cosmetology
+        &-menu
+            &-list
+                &__inner
+                    &-item
+                        flex-direction: column
+                    &-name
+                        margin-bottom: 5px
+                        text-align: center
+                    &-title
+                        text-align: center                       
 @media (max-width: 520px)
     .banner-title
         font-size: 28px
@@ -933,7 +959,11 @@
     .brend
         &__title
             font-size: 30px
-            max-width: 300px                                                                                                                                                                                             
+            max-width: 300px
+    .cosmetology
+        &__title
+            padding-bottom: 15px
+            height: 50px                                                                                                                                                                                                         
 @media (max-width: 390px)
     .creature
         &__image
@@ -1015,4 +1045,4 @@
             &__subtitle
                 font-size: 16px
     .brend
-        min-height: 280px                                                                           
+        min-height: 280px 

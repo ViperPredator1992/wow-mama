@@ -1040,5 +1040,18 @@ $(document).ready(function () {
             }
         }
     });
+    
+    $('.cosmetology-menu-list__link').click(function (e) {
+        e.preventDefault();
+        if ($(this).next().hasClass('open')) {
+            $(this).next().removeClass('open');
+            $(this).removeClass('bg')
+        } else {
+            $('.cosmetology-menu-list__link').next().removeClass('open');
+            $(this).next().addClass('open');
+            $('.cosmetology-menu-list__link').removeClass('bg');
+            $(this).addClass('bg');
+        }
+    });
 
 });

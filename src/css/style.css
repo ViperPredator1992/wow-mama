@@ -1133,6 +1133,29 @@ input {
   background-color: #ffb00f;
 }
 
+@media (max-width: 830px) {
+  .cosmetology-menu-list__inner::-webkit-scrollbar {
+    width: 6px;
+  }
+  .cosmetology-menu-list__inner::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 2px;
+    border-color: #ffb00f;
+    background-color: #ffb00f;
+  }
+  .cosmetology-menu-list__inner::-webkit-scrollbar-thumb:hover {
+    border-width: 1px 1px 1px 2px;
+    border-color: #ffb00f;
+    background-color: #ffb00f;
+  }
+  .cosmetology-menu-list__inner::-webkit-scrollbar-track {
+    border-width: 1px 1px 1px 2px;
+  }
+  .cosmetology-menu-list__inner::-webkit-scrollbar-track:hover {
+    border-left: solid 1px #ffb00f;
+    background-color: #ffb00f;
+  }
+}
+
 .header-top {
   background-color: #4d4843;
   min-height: 55px;
@@ -3796,18 +3819,39 @@ input {
   }
   .cosmetology__title::after {
     left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .cosmetology-menu {
     margin: 0;
   }
+  .cosmetology-menu-list {
+    overflow-y: visible;
+    height: auto;
+  }
   .cosmetology-menu-list__inner {
     position: static;
+    max-width: none;
+    margin-top: 0;
+    height: 210px;
+    overflow-y: scroll;
   }
   .cosmetology-menu-list__link {
     padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100%;
+  }
+  .cosmetology-menu-list__link::after {
+    content: '';
+    background-color: #ffb00f;
+    width: 3px;
+    height: 31px;
+    position: absolute;
+    top: 20px;
+    right: 0;
   }
 }
 
@@ -4024,6 +4068,19 @@ input {
   .creature-speech__title {
     margin: 0 0 20px;
   }
+  .cosmetology-menu-list__inner-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cosmetology-menu-list__inner-name {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .cosmetology-menu-list__inner-title {
+    text-align: center;
+  }
 }
 
 @media (max-width: 520px) {
@@ -4215,6 +4272,10 @@ input {
   .brend__title {
     font-size: 30px;
     max-width: 300px;
+  }
+  .cosmetology__title {
+    padding-bottom: 15px;
+    height: 50px;
   }
 }
 
