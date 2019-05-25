@@ -1050,15 +1050,12 @@ $(document).ready(function () {
     //         $(this).addClass('cosmetology-open');
 
     //     }
-    // });
 
-    // $('.cosmetology-menu-list__link').click(function (e) {
-    //     e.preventDefault();
-    //     if ($(this)) {
+    $('.cosmetology-menu-list__link').click(function (e) {
+        e.preventDefault();
+        if ($('.cosmetology-menu-list__inner').) {
             
-    //     }
-    // })
-
-    $('.cosmetology-menu-list__link')юршву( )
+        }
+    })
 
 });

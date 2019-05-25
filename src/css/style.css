@@ -2904,6 +2904,10 @@ input {
   color: #414141;
 }
 
+.cosmetology-menu-list__inner {
+  display: none;
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
