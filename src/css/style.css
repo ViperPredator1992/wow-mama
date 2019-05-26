@@ -4189,6 +4189,7 @@ input {
     top: 40px;
   }
   .header-top__phone {
+    font-size: 16px;
     bottom: 40px;
     left: 45%;
     -webkit-transform: translateX(-45%);
@@ -4294,6 +4295,12 @@ input {
   .creature__image {
     height: 40vh;
   }
+  .header-top__phone {
+    left: 47%;
+    -webkit-transform: translateX(-47%);
+        -ms-transform: translateX(-47%);
+            transform: translateX(-47%);
+  }
   .owl-item-block__title {
     font-size: 20px;
     letter-spacing: .5rem;
@@ -4361,6 +4368,12 @@ input {
   .brend {
     min-height: 270px;
   }
+  .header-top__phone {
+    left: 45%;
+    -webkit-transform: translateX(-45%);
+        -ms-transform: translateX(-45%);
+            transform: translateX(-45%);
+  }
 }
 
 @media (max-width: 338px) {
@@ -4376,6 +4389,15 @@ input {
   .online-form-field__politic {
     left: 110px;
     max-width: 140px;
+  }
+}
+
+@media (max-width: 334px) {
+  .header-top__phone {
+    left: 42%;
+    -webkit-transform: translateX(-42%);
+        -ms-transform: translateX(-42%);
+            transform: translateX(-42%);
   }
 }
 
